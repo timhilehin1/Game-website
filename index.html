@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/e96215e590.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-theme.css"/>
     <link rel="stylesheet" href="./styles.css">
     <title>T&M | </title>
 </head>
@@ -47,7 +48,7 @@
 <!---MAIN CONTENT-->
     <div class="container mt-2 px-2 p-lg-0 content">
 <div class="carousel rounded mt-2">
-    <div class="carousel-btn d-flex justify-content-between">
+    <div class="carousel-btn d-flex justify-content-between px-2">
         <button id="prevCarousel"><i class="fa-solid fa-angles-left"></i></button>
         <button id="nextCarousel"><i class="fa-solid fa-angles-right"></i></button>
     </div>
@@ -127,7 +128,7 @@
     </div>
 </div>
 
-<div class="row services mt-3">
+<div class="row services my-5">
     <div class="col-3 justify-content-center">
         <img src="./images/best-seller.png" alt="">
         <p>Premium Quality</p>
@@ -147,166 +148,130 @@
 </div>
 
 
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><div class="product">
-        <div class="product-image">
-            <div>
-                <button>Add to cart</button>
-            </div>
-            <img src="./images/sm evil dead.jpg" alt="">
-        </div>
-        <div class="product-details">
-            <p class="product-name">Evil dead</p>
-            <div class="d-flex">
-                <span class="percent-off">1</span>
-                <span class="slashed-price">2</span>
-                <span class="price">5</span>
-            </div>
-        </div>
-    </div></div>
-      <div class="swiper-slide"><div class="product">
-        <div class="product-image">
-            <div>
-                <button>Add to cart</button>
-            </div>
-            <img src="./images/sm spider-man.jpg" alt="">
-        </div>
-        <div class="product-details">
-            <p class="product-name">Evil dead</p>
-            <div class="d-flex">
-                <span class="percent-off">1</span>
-                <span class="slashed-price">2</span>
-                <span class="price">5</span>
-            </div>
-        </div>
-    </div></div>
+<div class="slider-container mt-3">
+<h3>Popular <i class="fa-solid fa-angle-right"></i></h3>
+    <div class="product-slider">
+        
+        <!-- Slides -->
+  <div class="product">
+          <a href="#" class="product-image d-block">
+            <span class="percent-off px-2 py-1 rounded">17%</span>
+             <img src="./images/sm evil dead.jpg" alt="">
+          </a>
+          <div class="product-details py-2 justify-content-around">
+              <p class="product-name">Evil dead</p>
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                  <p class="slashed-price">$42.99</p>
+                  <p class="price">$31.99</p>
+                  <button class="addCart px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+              </div>
+          </div>
+      </div>
 
-      <div class="swiper-slide"><div class="product">
-        <div class="product-image">
-            <div>
-                <button>Add to cart</button>
-            </div>
-            <img src="./images/sm God of war.jpg" alt="">
-        </div>
-        <div class="product-details">
+      <div class="product">
+        <a href="#" class="product-image d-block">
+          <span class="percent-off px-2 py-1 rounded">17%</span>
+           <img src="./images/sm God of war.jpg" alt="">
+        </a>
+        <div class="product-details py-2 justify-content-around">
             <p class="product-name">Evil dead</p>
-            <div class="d-flex">
-                <span class="percent-off">1</span>
-                <span class="slashed-price">2</span>
-                <span class="price">5</span>
+            <div class="d-flex w-100 align-items-center justify-content-between">
+                <p class="slashed-price">$42.99</p>
+                <p class="price">$31.99</p>
+                <button class="addCart px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
-    </div></div>
-
-    <div class="swiper-slide"><div class="product">
-        <div class="product-image">
-            <div>
-                <button>Add to cart</button>
-            </div>
-            <img src="./images/sm hitman.jpg" alt="">
-        </div>
-        <div class="product-details">
+    </div>
+      <div class="product">
+        <a href="#" class="product-image d-block">
+          <span class="percent-off px-2 py-1 rounded">17%</span>
+           <img src="./images/sm hitman.jpg" alt=""> 
+        </a>
+        <div class="product-details py-2 justify-content-around">
             <p class="product-name">Evil dead</p>
-            <div class="d-flex">
-                <span class="percent-off">1</span>
-                <span class="slashed-price">2</span>
-                <span class="price">5</span>
+            <div class="d-flex w-100 align-items-center justify-content-between">
+                <p class="slashed-price">$42.99</p>
+                <p class="price">$31.99</p>
+                <button class="addCart px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
-    </div></div>
-
-    <div class="swiper-slide"><div class="product">
-        <div class="product-image">
-            <div>
-                <button>Add to cart</button>
-            </div>
-            <img src="./images/sm far cry 6.webp" alt="">
-        </div>
-        <div class="product-details">
-            <p class="product-name">Evil dead</p>
-            <div class="d-flex">
-                <span class="percent-off">1</span>
-                <span class="slashed-price">2</span>
-                <span class="price">5</span>
-            </div>
-        </div>
-    </div></div>
-
-    <div class="swiper-slide"><div class="product">
-        <div class="product-image">
-            <div>
-                <button>Add to cart</button>
-            </div>
-            <img src="./images/sm evil dead.jpg" alt="">
-        </div>
-        <div class="product-details">
-            <p class="product-name">Evil dead</p>
-            <div class="d-flex">
-                <span class="percent-off">1</span>
-                <span class="slashed-price">2</span>
-                <span class="price">5</span>
-            </div>
-        </div>
-    </div></div>
-
     </div>
   
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-  </div>
+      <div class="product">
+        <a href="#" class="product-image d-block">
+         <img src="./images/sm far cry 6.webp" alt="">
+        </a>
+        <div class="product-details py-2 justify-content-around">
+            <p class="product-name">Evil dead</p>
+            <div class="d-flex w-100 align-items-center justify-content-between">
+                <p class="price">$31.99</p>
+                <button class="addCart px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+            </div>
+        </div>
+    </div>
+      <div class="product">
+        <a href="#" class="product-image d-block">
+          <span class="percent-off px-2 py-1 rounded">17%</span>
+           <img src="./images/sm evil dead.jpg" alt="">
+        </a>
+        <div class="product-details py-2 justify-content-around">
+            <p class="product-name">Evil dead</p>
+            <div class="d-flex w-100 align-items-center justify-content-between">
+                <p class="slashed-price">$42.99</p>
+                <p class="price">$31.99</p>
+                <button class="addCart px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+            </div>
+        </div>
+    </div>
 
+
+      </div>
+
+    <div class="product-slider-btn d-flex justify-content-between">
+        <button class="prev"><i class="fa-solid fa-angles-left"></i></button>
+    <button class="next"><i class="fa-solid fa-angles-right"></i></button>
+    </div>
 </div>
     
     
+  </div>
+    
+    
 
 
 
 
 
 
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script> const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
 
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 10
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 40
-    },
 
-    // when window width is >= 640px
-    1040: {
-      slidesPerView: 4,
-      spaceBetween: 40
-    }
-  },
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick.min.js"></script>
+<script type="text/javascript" src="./slick.min.js"></script>
+<script type="text/javascript">
+
+$('.product-slider').slick({
+infinite: true,
+variableWidth: true,
+slidesToScroll: 2,
+prevArrow:$(".prev"),
+nextArrow:$(".next"),
+autoplay: true,
+autoplaySpeed: 2000,
+responsive:[
+   {
+   breakpoint:900,
+  settings:{
+arrows:false,
+slidesToScroll: 1,
+  }
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  },
+]
+});
 
-  }); </script>
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="main.js"></script>
