@@ -1,3 +1,4 @@
+
 let carouselImg = document.getElementsByClassName('carousel-img')
 //check browser width and set appropriate Carousel image according to browser width
 window.onresize = ()=>{
@@ -82,3 +83,20 @@ carousel.addEventListener('mouseenter',() =>{
     clearInterval(id)// listens for when mouse enters carousel and stops carousel autoplay
 })
 carousel.addEventListener('mouseleave', autoplay) // listens for when mouse leaves carousel and starts carousel autoplay
+/*
+let product = document.querySelectorAll(".product-image")
+let test = []
+console.log(product)
+product.forEach(product => {
+    product.addEventListener("click", (event)=>{
+        productPage(event.target);
+    })
+});
+function productPage(product){
+let productCon = product.parentElement.parentElement
+let name = productCon.getElementsByClassName('product-name')[0].innerText;
+test[0] = name;
+let send = JSON.stringify(test);
+localStorage.setItem("product-page", send)
+}
+*/
