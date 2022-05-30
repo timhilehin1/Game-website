@@ -100,3 +100,27 @@ let send = JSON.stringify(test);
 localStorage.setItem("product-page", send)
 }
 */
+
+// Beginning of Timi's JS; fear not, no danger here.
+NewCategory_El = document.querySelector(".newCategory")
+topCategory_El = document.querySelector(".topCategory")
+soonCategory_El = document.querySelector(".soonCategory")
+
+
+function displayNew(){
+NewCategory_El.style.display = 'block'
+topCategory_El.style.display = 'none'
+soonCategory_El.style.display = 'none'
+}
+
+function displayTop(){
+    topCategory_El.style.display = 'block'
+    soonCategory_El.style.display = 'none'
+    NewCategory_El.style.display = 'none'
+}
+
+function displayComing(){
+    soonCategory_El.style.display = 'block'
+    topCategory_El.style.display = 'none'
+    NewCategory_El.style.display = 'none'
+}

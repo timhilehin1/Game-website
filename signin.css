@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:  rgb(0, 0, 0, 0.93);
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+.form{
+    height: 600px;
+    width: 500px;
+   margin: 100px auto;
+    background-color: #202020;
+    border-radius: 4px;
+    padding: 40px 20px 20px 20px;
+    
+}
+.signin-text{
+    text-align: center;
+}
+img{
+    height: 2.2rem;
+    margin: auto;
+    display: block;
+}
+.form-floating{
+    color: rgba(255, 255, 255, 0.72);
+}
+.form-control{
+    background-color: #202020;
+}
+.flex{
+    display: inline-block;
+}
+a{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.72);
+    margin-top: 8px;
+   
+}
+.account{
+       text-align: center; 
+      
+}
+
+  .btn{
+      color: rgba(255, 255, 255, 0.72);
+  }
+  .form-check-input{
+      background-color: #202020;
+      border: 1px solid rgba(255, 255, 255, 0.72);
+  }
+  .form-control:focus{
+      background-color: #202020;
+  }

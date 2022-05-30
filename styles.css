@@ -363,3 +363,16 @@ html{
         margin: 0 auto;
     }
 }
+
+/* start of timi's CSS; thread carefully, danger ahead! */
+.categories{
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.soonCategory{
+    display: none;
+}
+.topCategory{
+    display: none;
+}
