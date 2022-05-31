@@ -12,8 +12,9 @@
 body{
 background-color:  rgb(32, 32, 32);
 font-family: 'Kanit', sans-serif;
-height: 1500px;
+overflow-x: hidden;
 }
+
 
 a{
     text-decoration: none;
@@ -273,13 +274,6 @@ font-weight: bold;
     font-weight: bold;
     font-size: 1.3rem;
 }
-
-.product-slider-btn{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    visibility: visible;
-}
 .slick-next{
     top: 40%;
 }
@@ -334,9 +328,6 @@ html{
 .carousel .product-price{
     font-size: 1.4rem;
 }
-.product-slider-btn{
-    visibility: hidden;
-}
 }
 
 @media(min-width:576px) and (max-width:768px){
@@ -353,9 +344,6 @@ html{
         width: 100%;
         height: 25rem;
     }
-    .product-slider-btn{
-        visibility: hidden;
-    }
 }
 @media(min-width: 769px){
     .content{
@@ -369,10 +357,44 @@ html{
     color: white;
     text-align: center;
     cursor: pointer;
+    font-size: 1.2rem;
+}
+.category-link:hover{
+    transition: all ease-in-out 200ms;
+    color: var(--lightGreen);
+}
+.active-category{
+    color: var(--lightGreen);
+    font-weight: bold;
+   border-bottom: var(--lightGreen) 4px solid;
+   border-radius: 5px;
+   font-size: 1.5rem;
+}
+.active-category:hover{
+    color: var(--lightGreen);
+    color:white;
+ }
+.slider-container{
+    animation: Slidein 700ms forwards;
+ }
+ .newCategory{
+    animation: Slidein 700ms forwards;
 }
 .soonCategory{
     display: none;
+    animation: Slidein 700ms forwards;
 }
 .topCategory{
     display: none;
+    animation: Slidein 700ms forwards;
+}
+@keyframes Slidein{
+    0%{
+        transform: translateX(100%);
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }

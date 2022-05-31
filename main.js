@@ -105,6 +105,14 @@ localStorage.setItem("product-page", send)
 NewCategory_El = document.querySelector(".newCategory")
 topCategory_El = document.querySelector(".topCategory")
 soonCategory_El = document.querySelector(".soonCategory")
+categoryLink = document.querySelectorAll(".category-link");
+
+categoryLink.forEach( link =>{
+link.addEventListener('click', (event)=>{
+categoryLink.forEach(link =>{
+link.classList.remove('active-category');})
+event.target.classList.add("active-category")})
+})
 
 
 function displayNew(){
