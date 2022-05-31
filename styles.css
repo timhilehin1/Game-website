@@ -364,15 +364,14 @@ html{
     color: var(--lightGreen);
 }
 .active-category{
-    color: var(--lightGreen);
-    font-weight: bold;
-   border-bottom: var(--lightGreen) 4px solid;
-   border-radius: 5px;
-   font-size: 1.5rem;
+color: var(--lightGreen);
+font-weight: bold;
+border-bottom: var(--lightGreen) 4px solid;
+border-radius: 5px;
+font-size: 1.5rem;
 }
 .active-category:hover{
     color: var(--lightGreen);
-    color:white;
  }
 .slider-container{
     animation: Slidein 700ms forwards;
