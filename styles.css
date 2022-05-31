@@ -371,7 +371,7 @@ border-radius: 5px;
 font-size: 1.5rem;
 }
 .active-category:hover{
-    color: var(--lightGreen);
+color: var(--lightGreen);
  }
 .slider-container{
     animation: Slidein 700ms forwards;
