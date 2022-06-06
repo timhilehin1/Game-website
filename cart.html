@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e96215e590.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="d-flex justify-content-between">
+<div class="d-flex my-2">
+<i class="fa-solid fa-bars d-md-none align-self-center px-3"></i>
+<a href="" class="pe-2 align-self-center"><img class="nav-logo" src="./images/cover.png" alt="company logo"></a> 
+<ul class="px-2 m-0 align-self-center d-none d-md-block">
+    <li><a class="px-2 py-3 active-nav" href="">STORE</a> </li>
+    <li><a class="px-2 py-3" href="">HELP</a> </li>
+    <li><a class="px-2 py-3" href="">ABOUT</a> </li>
+</ul>
+</div>
+<div class="d-flex align-items-center">
+<i class="fa-solid fa-magnifying-glass d-md-none align-self-center me-3"></i>
+<a class="align-self-center me-3 d-flex" href=""><i class="fa-solid fa-user px-2 align-self-center"></i><span class="d-none d-md-block">SIGN IN</span></a>
+<a href=""><i class="fa-solid fa-heart p-3 wishlist"></i></a>
+</div>
+        </nav>
+    </div>
+    <div class="container sticky-top mt-2 p-0">
+        <div class="justify-content-md-between justify-content-end searchAndcart-container py-2 d-flex">
+            <div class="d-none d-md-flex search-button align-self-center">
+                <button class="p-2 rounded-start"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="rounded-end" type="search" placeholder="Search">
+            </div>
+         <a class="align-self-center p-2 cart rounded" href=""><i class="fa-solid fa-cart-shopping "></i><span class="cart-counter ps-2">0</span></a>
+        </div>
+    </div>
+
+    <div class="container   mt-5 cart-container ">
+        <div class="row gx-5">
+          <div class="col-8 d-flex py-3 outer-container">
+            <img src="./images/far cry 6.png" />
+  
+            <div class="d-flex new  justify-content-between">
+              <p class="product-name ms-2 mt-2">Far cry 5</p>
+              <div class="third d-flex">
+                <div class="d-flex discount">
+                    <p>$37.99</p><p class="slashed-price">$42.99</p><div class="percent-off py-1 rounded">-17%</div>
+            </div>
+            <p class=" mt-2 sale-end">Sale ends on 30/6/2022 at 12pm</p>
+            <div class="counter mt-3 ms-2 d-flex">
+            <button class="inc-btn">+</button>
+            <p class="num">0</p>
+            <button class="inc-btn">-</button>
+           
+            </div>
+            <div class=" d-flex mt-3 remove">
+                <a class="remove text-secondary" href="#">add to wishlist</a>
+                <a class="remove text-secondary" href="#">Remove</a>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-3  checkout-container ">
+              <p class="summary mt-2">CART SUMMARY</p>
+              <hr class="mt-0">
+              <div class="subtotal-cont d-flex justify-content-between">
+              <p class="subtotal">Subtotal</p>
+              <p class="subtotal">$37.99</p>
+              </div>
+              <hr class="mt-1">
+              <button class="btn btn-primary mt-2" type="button">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+    
+</body>
