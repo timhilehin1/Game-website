@@ -59,11 +59,11 @@ if(condition == "next"){
 }
 else{
     if(carouselIndex == 0){
-        carouselIndex = carousels.length - 1 ;// if carousel is on the first item sets the carousel to the last item
+    carouselIndex = carousels.length - 1 ;// if carousel is on the first item sets the carousel to the last item
     }
     else {carouselIndex--}
 }
-console.log(carouselIndex);
+
 carousels.forEach(function(carousel){
 carousel.classList.remove('show-item');// removes show-item class from all carousels
 })
@@ -83,6 +83,7 @@ carousel.addEventListener('mouseenter',() =>{
     clearInterval(id)// listens for when mouse enters carousel and stops carousel autoplay
 })
 carousel.addEventListener('mouseleave', autoplay) // listens for when mouse leaves carousel and starts carousel autoplay
+
 /*
 let product = document.querySelectorAll(".product-image")
 let test = []
@@ -100,6 +101,14 @@ let send = JSON.stringify(test);
 localStorage.setItem("product-page", send)
 }
 */
+window.onload = ()=> {
+    let load = document.getElementsByClassName('loading')[0]
+    let page = document.getElementsByClassName('page')[0]
+    setTimeout(() => {
+        page.style.display ="block"
+        load.style.display ="none"
+    }, 3000)
+}
 
 // Beginning of Timi's JS; fear not, no danger here.
 NewCategory_El = document.querySelector(".newCategory")
