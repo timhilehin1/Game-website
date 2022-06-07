@@ -6,43 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<<<<<<< HEAD
     <title>Signin</title> 
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e96215e590.js" crossorigin="anonymous"></script>
+>>>>>>> 687e0c125e115f3c96788e3789726ad425349014
 </head>
 
 <link  rel="stylesheet" href="./signin.css">
 <body>
- <div class="form">
+ <div class="form px-4 py-5 rounded">
     <img src="./images/cover.png"><br>
     <p class="signin-text">Sign in with a T&M Games Account</p>
-    <div class="form-floating mt-5 mx-4">
+    <div class="form-floating my-4 rounded">
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">Email address</label>
+        <i class="fa-solid fa-user pe-3"></i>
       </div>
-      <div class="form-floating mt-5 mx-4">
+      <div class="form-floating my-4">
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <!-- <i class="bi bi-eye-slash" 
-        id="togglePassword"></i> -->
+        <i class="fa-solid fa-eye-slash pe-3"></i>
         <label for="floatingInput">Password</label>
       </div>
-      <div class="row  align-items-center">
-    <div class="col-sm-6 ">
-      <input class="form-check-input ms-4 mt-4" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label mt-4 ms-4" for="autoSizingCheck">
+      <div class="row align-items-center">
+    <div class="col-6 d-flex justify-content-start">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label ms-2" for="autoSizingCheck">
         Remember me
       </label>
       </div>
-      <div class="col-sm-6 ">
-      <label class="form-check-label mt-4 ms-4"  for="autoSizingCheck">
+      <div class="col-6 d-flex justify-content-end">
+      <label class="form-check-label"  for="autoSizingCheck">
         <a href="#">Forgot password?</a>
       </label>
     </div>
     </div>
 
 <div class="d-grid gap-2 mt-4 m-auto">
-<button class="btn btn-primary" type="button">LOG IN NOW</button>
+<button class="button py-2 px-3 rounded" type="button">LOG IN NOW</button>
 
-<a href="#" class="privacy">privacy policy</a>
-<p class="account">Don't have a T&M account?<a href="#" class="signup">Sign up</a></p>
+<a href="#" class="privacy">Privacy policy</a>
+<p class="account m-0">Don't have a T&M account?  <a href="#" class="signup">Sign up</a></p>
 
  </div>
 </body>
