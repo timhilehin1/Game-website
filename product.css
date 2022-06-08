@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --darkGreen :#096e8d;
+    --lightGreen:#5bd0a4;
+}
+body{
+background-color:  rgb(32, 32, 32);
+font-family: 'Kanit', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    font-size: 19px;
+}
+nav{
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+}
+.nav-logo{
+    height: 2.2rem;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: 0 .2rem;
+}
+nav li a{
+    background-image: linear-gradient(to  right, var(--lightGreen), var(--darkGreen));
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0 2px;
+    transition: background 400ms ease;
+}
+.active-nav{
+    font-weight: bolder;
+    background-size: 100% 3px;
+}
+nav li a:hover{
+    background-size: 100% 3px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+p{
+    margin: 0;
+}
+nav .fa-solid{
+    color: white;
+    font-size: 1rem;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.cart, .wishlist{
+    background-color: var(--lightGreen);
+}
+.search-button{
+    width: 25%;
+    height: 2.5rem;
+}
+.search-button button{
+    border: 0;
+    outline: 0;
+    background-color: rgba(0,0,0,.4);
+}
+.search-button i{
+    color: whitesmoke;
+}
+.search-button input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    padding-left: .5rem;
+    /*Change Blinking cursor in Search bar to white*/
+    caret-color: white;
+}
+hr{
+    height: 1px;
+    background-color:  rgba(255, 255, 255, 0.72);
+    border: none;
+}
+h2{
+    color: white;
+    padding: 0 0 0 5%; 
+}
+.thumbnail{
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+}
+.overviewcont{
+    display: flex;
+    color: white;
+    gap: 1rem;
+    padding: 0 0 0 5%;
+    cursor: pointer;
+}
+.overview:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.product-info{
+    color: white;
+}
+.productInfoImg{
+    border-radius: 10px;
+}
+/* .img-thumbnail{
+    border-style: none;
+} */
+.slashed-price{
+    text-decoration: line-through;
+    color: rgba(245, 245, 245, 0.6);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.percent-off{
+    width: 3rem;
+    background-color: var(--lightGreen);
+    font-size: 1rem;
+}
+.price-container{
+    display: flex;
+    gap: .5rem;
+}
+.actual-price{
+    font-size: 1.2rem;
+    color:  #ffffff;
+}
+.sale-end{
+    font-size: .7rem;
+}
+.btn-primary{
+    background-color: var(--lightGreen);
+    border-style: none;
+}
+.btn-primary:hover{
+    background-color: aqua;
+}
+.btn-outline-secondary{
+    color: white;
+}
+.description{
+    font-size: 1.1rem;
+}
+span{
+    color: rgba(245, 245, 245, 0.6);
+}
+@media only screen and (max-width: 600px) {
+    .price-container {
+      justify-content: center;
+    }
+    .sale-end{
+        text-align: center;
+    }
+  }
