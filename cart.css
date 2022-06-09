@@ -10,9 +10,29 @@
     --lightGreen:#5bd0a4;
 }
 body{
-    background-color:  rgb(0, 0, 0, 0.93);
-font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    background-image:url(images/wallpaper.jpg);
+    background-color: rgb(0, 0, 0, .8);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    color: white;
+    position: relative;
 }
+.blur{
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    position: absolute;
+   z-index: -2;  
+}
+    a:hover{
+        color: white;
+    }
 
 a{
     text-decoration: none;
@@ -23,7 +43,7 @@ html{
     font-size: 19px;
 }
 nav{
-    background-color: rgb(39, 39, 39);
+    background-color:  rgb(39, 39, 39, .4);
     width: 100%;
 }
 .nav-logo{
@@ -97,77 +117,168 @@ nav .fa-solid{
     color: white;
 }
 .product-name{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: white
 }
 .slashed-price{
     text-decoration: line-through;
     color: rgba(245, 245, 245, 0.6);
     font-weight: bold;
-    font-size: 1rem;
 }
 .discount{
     gap: .5rem;
 }
 .percent-off{
-    width: 2rem;
-    height: 1.5rem;
-    background-color: var(--lightGreen);
-    font-size: .7rem;
+    background-color: firebrick;
     text-align: center;
-    
 }
-img {
-    height: 8rem;
+.product-price{
+    color: white;
+    font-size: 1.6rem;
+}
+.outer-container img {
+    height: 10rem;
     width: 8rem;
-    border-radius: 7px;
 }
-
-.outer-container {
-    flex-direction: row;
-    background-color: #202020;
+.outer-container{
+    background-color:  rgb(39, 39, 39, .5);
 }
 
 .second {
     flex-direction: row;
 }
 
-.third {
-    flex-direction: column;
-    margin-left: auto;
-}
-
-.new {
-    width: 100%;
-}
 
 .last {
     justify-content: space-between;
 }
-.sale-end{
-    font-size: .7rem;
-}
 
-.inc-btn{
-    background-color: #202020;
+
+.inc-btn, .dec-btn{
+    background-color: rgb(32, 32, 32, 0);
     border: 1px solid white;
     border-radius: 50px;
     width: 1.5rem;
     color: white;
 }
 .counter{
-    gap: 1rem;
+    gap: .5rem;
 }
 .remove{
-    font-size: .7rem;
-    gap: 1rem;
+    gap: .5rem;
     text-decoration: underline;
+    color: darkgray;
 }
-.btn-primary{
-    background-color: var(--lightGreen);
-    border-style: none;
+.remove a:hover{
+    color: white;
+}
+.buy-now{
+    background-image: linear-gradient(to  right, var(--lightGreen),var(--darkGreen));
+    color: white;
+    border: 0;
+    outline: 0;
+}
+.buy-now:hover{
+    transform: scale(.96);
+    color: white;
+   filter: brightness(95%);
+   transition: all ease-in-out 200ms ;
+}
+
+/* FOOTER*/
+
+.app{
+    background-color: none;
+}
+.app img{
+   height: 1.8rem; 
+}
+.app a{
+    border: 1px white solid;
+    color: white;
+    box-shadow: inset 0 0 0 0 white;
+    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
+}
+.app a:active, .app a:hover{
+    border: 1px white solid;
+    color: var(--lightGreen);
+    box-shadow: inset 17rem 0 0 0 white;
+}
+
+footer{
+    background-color: rgb(20, 20, 20, .9);
+    color: rgb(165, 165, 165);
+}
+footer span{
+    color: white;
+}
+footer i {
+    font-size: 1.5rem;
+}
+footer .to-top i{
+    font-size: 2rem;
+}
+footer a:hover{
+    color: var(--lightGreen);
+}
+footer li{
+    margin: .4rem 0;
+}
+footer li > img{
+    height: 2.3rem;
+}
+
+footer input{
     width: 100%;
+    border: 0;
+    outline: 0;
 }
-.btn-primary:hover{
-    background-color: aqua;
+footer button{
+    border: 0;
+    outline: 0;
+    background-image: linear-gradient(to right, var(--lightGreen), var(--darkGreen) );
+    color: white;
+}
+
+footer div{
+    width:100%;
+}
+footer .logo{
+    height: 3.2rem;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media(max-width:575px){
+    html{
+        font-size: 14px;
+    
+    }
+    .outer-container img {
+        height: 8rem;
+        width: 6rem;
+    }
+    footer .logo{
+        display: block;
+       margin: auto;
+    }
+    .app{
+        background-color: rgb(0, 0, 0, .5);;
+    }
+}  
+    @media(min-width:576px) and (max-width:768px) {
+        html{
+            font-size: 16px;
+        }
+        footer .logo{
+            display: block;
+           margin: auto;
+        }
+        .app{
+            background-color: rgb(0, 0, 0, .5);;
+        }
 }

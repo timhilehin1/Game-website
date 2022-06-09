@@ -10,10 +10,29 @@
     --lightGreen:#5bd0a4;
 }
 body{
-background-color:  rgb(32, 32, 32);
-font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    background-image:url(images/wallpaper.jpg);
+    background-color: rgb(0, 0, 0, .8);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    color: white;
+    position: relative;
 }
-
+.blur{
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    position: absolute;
+   z-index: -2;  
+}
+    a:hover{
+        color: white;
+    }
 a{
     text-decoration: none;
     color: white;
@@ -97,7 +116,6 @@ hr{
 }
 h2{
     color: white;
-    padding: 0 0 0 5%; 
 }
 .thumbnail{
     height: 8rem;
@@ -108,12 +126,21 @@ h2{
     display: flex;
     color: white;
     gap: 1rem;
-    padding: 0 0 0 5%;
     cursor: pointer;
 }
-.overview:hover {
+.overviewcont p {
+    color: rgba(245, 245, 245, 0.6);
+}
+.overviewcont p:hover {
     text-decoration: underline;
-    color: blue;
+    color: var(--lightGreen);
+}
+.overviewcont p.overview-active{
+    color: white;
+}
+.overviewcont p.overview-active{
+    color: white;
+    text-decoration: none;
 }
 .product-info{
     color: white;
@@ -131,42 +158,142 @@ h2{
     font-size: 1rem;
 }
 .percent-off{
-    width: 3rem;
-    background-color: var(--lightGreen);
-    font-size: 1rem;
+    background-color: firebrick;
 }
 .price-container{
     display: flex;
     gap: .5rem;
 }
 .actual-price{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color:  #ffffff;
 }
 .sale-end{
-    font-size: .7rem;
+    font-size: .85rem;
 }
-.btn-primary{
-    background-color: var(--lightGreen);
-    border-style: none;
-}
-.btn-primary:hover{
-    background-color: aqua;
-}
-.btn-outline-secondary{
+.buy-now{
+    background-image: linear-gradient(to  right, var(--lightGreen),var(--darkGreen));
     color: white;
 }
-.description{
-    font-size: 1.1rem;
+.buy-now:hover{
+    transform: scale(.96);
+    color: white;
+   filter: brightness(95%);
+   transition: all ease-in-out 200ms ;
 }
-span{
-    color: rgba(245, 245, 245, 0.6);
+.add, .addCart{
+    color: white;
+    box-shadow: inset 0 0 0 0 white;
+    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
+    border: .1rem solid white;
 }
-@media only screen and (max-width: 600px) {
-    .price-container {
-      justify-content: center;
-    }
-    .sale-end{
-        text-align: center;
-    }
+.addCart:hover, .add:hover {
+color: var(--darkGreen);
+box-shadow: inset 50rem 0 0 0 white;
   }
+
+/* FOOTER*/
+
+.app{
+    background-color: none;
+}
+.app img{
+   height: 1.8rem; 
+}
+.app a{
+    border: 1px white solid;
+    color: white;
+    box-shadow: inset 0 0 0 0 white;
+    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
+}
+.app a:active, .app a:hover{
+    border: 1px white solid;
+    color: var(--lightGreen);
+    box-shadow: inset 17rem 0 0 0 white;
+}
+
+footer{
+    background-color: rgb(20, 20, 20, .9);
+    color: rgb(165, 165, 165);
+}
+footer span{
+    color: white;
+}
+footer i {
+    font-size: 1.5rem;
+}
+footer .to-top i{
+    font-size: 2rem;
+}
+footer a:hover{
+    color: var(--lightGreen);
+}
+footer li{
+    margin: .4rem 0;
+}
+footer li > img{
+    height: 2.3rem;
+}
+
+footer input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+}
+footer button{
+    border: 0;
+    outline: 0;
+    background-image: linear-gradient(to right, var(--lightGreen), var(--darkGreen) );
+    color: white;
+}
+
+footer div{
+    width:100%;
+}
+footer .logo{
+    height: 3.2rem;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+@media(max-width:575px){
+    html{
+        font-size: 14px;
+    }
+    .price-container {
+        justify-content: center;
+      }
+      .sale-end{
+          text-align: center;
+      }
+      footer .logo{
+        display: block;
+       margin: auto;
+    }
+    .app{
+        background-color: rgb(0, 0, 0, .5);;
+    }
+    
+    }
+    
+    @media(min-width:576px) and (max-width:768px) {
+        html{
+            font-size: 16px;
+        }
+        footer .logo{
+            display: block;
+           margin: auto;
+        }
+        .app{
+            background-color: rgb(0, 0, 0, .5);;
+        }
+}
