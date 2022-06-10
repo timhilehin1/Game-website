@@ -47,16 +47,17 @@
             <button class="p-2 rounded-start"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input class="rounded-end" type="search" placeholder="Search">
         </div>
-     <a class="align-self-center p-2 cart rounded" href="cart.html"><i class="fa-solid fa-cart-shopping "></i><span class="cart-counter ps-2">0</span></a>
+     <a class="align-self-center p-2 cart rounded" href="cart.html"><i class="fa-solid fa-cart-shopping ">
+     </i><span class="cart-counter ps-2"></span></a>
     </div>
 </div>
 
 <!---MAIN CONTENT-->
     <div class="container mt-2 px-2 p-lg-0 content">
 <div class="carousel rounded mt-2">
-    <div class="carousel-btn d-flex justify-content-between">
-        <button id="prevCarousel"></button>
-        <button id="nextCarousel"></button>
+    <div class="carousel-btn d-flex justify-content-between px-3">
+        <button id="prevCarousel"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="nextCarousel"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
     <div class="carousels show-item">
         <div class="carousel-items rounded">
@@ -136,19 +137,19 @@
 </div>
 <main class="row services my-5">
     <div class="col-3 justify-content-center">
-        <img  class="rounded" src="./images/best-seller.png" alt="">
+        <img class="small-product-image rounded" src="./images/best-seller.png" alt="">
         <p>Premium Quality</p>
     </div>
     <div class="col-3 justify-content-center">
-        <img  class="rounded" src="./images/fast-delivery.png" alt="">
+        <img class="small-product-image rounded" src="./images/fast-delivery.png" alt="">
         <p>Fast Delivery</p>
     </div>
     <div class="col-3 justify-content-center">
-        <img  class="rounded" src="./images/verified.png" alt="">
+        <img class="small-product-image rounded" src="./images/verified.png" alt="">
         <p>100% Secure Payment</p>
     </div>
     <div class="col-3 justify-content-center">
-        <img  class="rounded" src="./images/product-return.png" alt="">
+        <img class="small-product-image rounded" src="./images/product-return.png" alt="">
         <p>Free and Easy Returns</p>
     </div>
 </main>
@@ -159,72 +160,88 @@
     <div class="product-slider">
   <div class="product">
           <a href="product.html " class="product-image d-block">
-            <span class="percent-off p-1 rounded">17%</span>
-             <img class="rounded" src="./images/sm evil dead.jpg" alt="">
+            <span class="percent-off p-1 rounded">7%</span>
+             <img class="small-product-image rounded" src="./images/sm evil dead.jpg" alt="">
           </a>
           <div class="product-details py-2 justify-content-around">
               <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
-              
               <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                  <div class="d-flex">
-                    <p class="slashed-price pe-2 align-self-center">$42.99</p>
+                    <p class="slashed-price pe-2 align-self-center">$50.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
+          <!---HIDDEN DETAILS-->
+          <img class="large-product-image d-none" src="images/evil dead.jpg" alt="">
+          <img class="product-logo d-none" src="images/evil dead logo.png" alt="">
       </div>
+
 
       <div class="product">
         <a href="product.html " class="product-image d-block">
-          <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm God of war.jpg" alt="">
+          <span class="percent-off p-1 rounded">15%</span>
+           <img class="small-product-image rounded" src="./images/sm God of war.jpg" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
-            <div class="d-flex justify-content-between"><p class="product-name align-self-center">God of War</p> </div>
+            <div class="d-flex justify-content-between"><p class="product-name align-self-center">God of War </p> </div>
             <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
-                    <div class="d-flex">
-                    <p class="slashed-price pe-2 align-self-center">$42.99</p>
-                    <p class="price">$31.99</p>
-                </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+               <div class="d-flex">
+                  <p class="slashed-price pe-2 align-self-center">$40.99</p>
+                  <p class="price">$22.99</p>
+              </div>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
+        <!---HIDDEN DETAILS-->
+        <img class="large-product-image d-none" src="images/evil dead.jpg" alt="">
+        <img class="product-logo d-none" src="images/evil dead logo.png" alt="">
     </div>
+
+    
       <div class="product">
         <a href="product.html " class="product-image d-block">
-          <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm hitman.jpg" alt=""> 
+          <span class="percent-off p-1 rounded">40%</span>
+           <img class="small-product-image rounded" src="./images/sm hitman.jpg" alt=""> 
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">Hitman III</p> </div>
             <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                 <div class="d-flex">
-                    <p class="slashed-price pe-2 align-self-center">$42.99</p>
-                    <p class="price">$31.99</p>
+                    <p class="slashed-price pe-2 align-self-center">$17.99</p>
+                    <p class="price">$9.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
+         <!---HIDDEN DETAILS-->
+         <img class="large-product-image d-none" src="images/hitman.jpg" alt="">
+         <img class="product-logo d-none" src="images/hitman logo.png" alt="">
     </div>
   
       <div class="product">
         <a href="product.html " class="product-image d-block">
-         <img  class="rounded" src="./images/sm far cry 6.webp" alt="">
+            <span class="percent-off p-1 rounded"></span>
+         <img class="small-product-image rounded" src="./images/sm far cry 6.webp" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">Far Cry 6</p> </div>
             <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
-                <p class="price">$31.99</p>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <p class="slashed-price pe-2 align-self-center d-none"></p>
+                <p class="price">$19.99</p>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
+         <!---HIDDEN DETAILS-->
+         <img class="large-product-image d-none" src="images/far cry 6.jpg" alt="">
+         <img class="product-logo d-none" src="images/far cry 6 logo.png" alt="">
     </div>
 
       <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm gta5.jpg" alt="">
+           <img class="small-product-image rounded" src="./images/sm gta5.jpg" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">GTA V</p> </div>
@@ -233,7 +250,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
@@ -241,7 +258,7 @@
     <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm fifa.webp" alt="">
+           <img class="small-product-image rounded" src="./images/sm fifa.webp" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">FIFA 22</p> </div>
@@ -250,14 +267,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
     <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm fortnite.webp" alt="">
+           <img class="small-product-image rounded" src="./images/sm fortnite.webp" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">Fortnite</p> </div>
@@ -266,7 +283,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
@@ -274,7 +291,7 @@
     <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm fm.jpg" alt="">
+           <img class="small-product-image rounded" src="./images/sm fm.jpg" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">FM 22</p> </div>
@@ -283,7 +300,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
@@ -297,7 +314,7 @@
     <section class="mt-3 editor-picks">
         <div class="picks">
             
-         <img class="rounded" src="images/sm forza.jpg" alt="">
+         <img class="small-product-image rounded" src="images/sm forza.jpg" alt="">
          <div class="overlay rounded">
              <div class="product-details text-center">
                 <span class="percent-off p-1 rounded">17%</span>
@@ -307,14 +324,14 @@
                          <p class="slashed-price pe-2 align-self-center me-2">$42.99</p>
                          <p class="price">$31.99</p>
                      </div>
-                     <a  href="" class="addCart rounded px-3 py-2 mt-3"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</a>
+                     <a href="#" class="mt-3"><i class="addCart rounded px-4 py-3 fa-solid fa-cart-shopping"> BUY NOW</i></a>
                  </div>
              </div>
          </div>
      </div>
      
          <div class="picks">
-          <img class="rounded" src="images/sm battlefield.webp" alt="">
+          <img class="small-product-image rounded" src="images/sm battlefield.webp" alt="">
           <div class="overlay rounded">
                <div class="product-details text-center">
             <span class="percent-off p-1 rounded">17%</span>
@@ -324,14 +341,14 @@
                      <p class="slashed-price pe-2 align-self-center me-2">$42.99</p>
                      <p class="price">$31.99</p>
                  </div>
-                 <a  href="" class="addCart rounded px-3 py-2 mt-3"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</a>
+                 <a href="#" class="mt-3"><i class="addCart rounded px-4 py-3 fa-solid fa-cart-shopping"> BUY NOW</i></a>
              </div>
          </div></div></div>
         
     
      
              <div class="picks">
-              <img class="rounded" src="images/sm vampire.jpg" alt="">
+              <img class="small-product-image rounded" src="images/sm vampire.jpg" alt="">
               <div class="overlay rounded"> 
                   <div class="product-details text-center">
                     <span class="percent-off p-1 rounded">17%</span>
@@ -341,14 +358,12 @@
                          <p class="slashed-price pe-2 align-self-center me-2">$42.99</p>
                          <p class="price">$31.99</p>
                      </div>
-                     <a  href="" class="addCart rounded px-3 py-2 mt-3"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</a>
+                     <a href="#" class="mt-3"><i class="addCart rounded px-4 py-3 fa-solid fa-cart-shopping"> BUY NOW</i></a>
                  </div>
              </div></div></div>
              
 </section>
 </main>
-
-
 
 
 <main class="slider-container my-5">
@@ -357,7 +372,7 @@
           <div class="product">
                   <a href="product.html " class="product-image d-block">
                     <span class="percent-off p-1 rounded">17%</span>
-                     <img class="rounded" src="./images/sm cyberpunk.jpg" alt="">
+                     <img class="small-product-image rounded" src="./images/sm cyberpunk.jpg" alt="">
                   </a>
                   <div class="product-details py-2 justify-content-around">
                        <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -366,7 +381,7 @@
                             <p class="slashed-price pe-2 align-self-center">$42.99</p>
                             <p class="price">$31.99</p>
                         </div>
-                          <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                          <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                       </div>
                   </div>
               </div>
@@ -374,7 +389,7 @@
               <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/sm lego.webp" alt="">
+                   <img class="small-product-image rounded" src="./images/sm lego.webp" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -383,14 +398,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
               <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/sm prey.webp" alt=""> 
+                   <img class="small-product-image rounded" src="./images/sm prey.webp" alt=""> 
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -399,20 +414,20 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
           
               <div class="product">
                 <a href="product.html " class="product-image d-block">
-                 <img  class="rounded" src="./images/sm wwz.jpg" alt="">
+                 <img class="small-product-image rounded" src="./images/sm wwz.jpg" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
                     <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                         <p class="price">$31.99</p>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -420,7 +435,7 @@
               <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/sm tiny tina.jpg" alt="">
+                   <img class="small-product-image rounded" src="./images/sm tiny tina.jpg" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -429,7 +444,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -437,7 +452,7 @@
             <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/sm tomb raider.jpg" alt="">
+                   <img class="small-product-image rounded" src="./images/sm tomb raider.jpg" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -446,14 +461,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
             <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/sm rocket league.webp" alt="">
+                   <img class="small-product-image rounded" src="./images/sm rocket league.webp" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -462,7 +477,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -470,7 +485,7 @@
             <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/sm sifu.jpg" alt="">
+                   <img class="small-product-image rounded" src="./images/sm sifu.jpg" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -479,7 +494,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -510,7 +525,7 @@
   <div class="product">
           <a href="product.html " class="product-image d-block">
             <span class="percent-off p-1 rounded">17%</span>
-             <img class="rounded" src="./images/sm evil dead.jpg" alt="">
+             <img class="small-product-image rounded" src="./images/sm evil dead.jpg" alt="">
           </a>
           <div class="product-details py-2 justify-content-around">
               <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead</p> </div>
@@ -519,7 +534,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
       </div>
@@ -527,7 +542,7 @@
       <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm God of war.jpg" alt="">
+           <img class="small-product-image rounded" src="./images/sm God of war.jpg" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">God of War</p> </div>
@@ -536,14 +551,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
       <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm hitman.jpg" alt=""> 
+           <img class="small-product-image rounded" src="./images/sm hitman.jpg" alt=""> 
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">Hitman III</p> </div>
@@ -552,20 +567,20 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
   
       <div class="product">
         <a href="product.html " class="product-image d-block">
-         <img  class="rounded" src="./images/sm far cry 6.webp" alt="">
+         <img class="small-product-image rounded" src="./images/sm far cry 6.webp" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">Far Cry 6</p> </div>
             <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                 <p class="price">$31.99</p>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
@@ -573,7 +588,7 @@
       <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm gta5.jpg" alt="">
+           <img class="small-product-image rounded" src="./images/sm gta5.jpg" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">GTA V</p> </div>
@@ -582,7 +597,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
@@ -590,7 +605,7 @@
     <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm fifa.webp" alt="">
+           <img class="small-product-image rounded" src="./images/sm fifa.webp" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">FIFA 22</p> </div>
@@ -599,14 +614,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
     <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm fortnite.webp" alt="">
+           <img class="small-product-image rounded" src="./images/sm fortnite.webp" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">Fortnite</p> </div>
@@ -615,7 +630,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
@@ -623,7 +638,7 @@
     <div class="product">
         <a href="product.html " class="product-image d-block">
           <span class="percent-off p-1 rounded">17%</span>
-           <img  class="rounded" src="./images/sm fm.jpg" alt="">
+           <img class="small-product-image rounded" src="./images/sm fm.jpg" alt="">
         </a>
         <div class="product-details py-2 justify-content-around">
             <div class="d-flex justify-content-between"><p class="product-name align-self-center">FM 22</p> </div>
@@ -632,7 +647,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
     </div>
@@ -644,7 +659,7 @@
         <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img class="rounded" src="./images/sm evil dead.jpg" alt="">
+                   <img class="small-product-image rounded" src="./images/sm evil dead.jpg" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                     <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead</p> </div>
@@ -653,7 +668,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -661,7 +676,7 @@
             <div class="product">
               <a href="product.html " class="product-image d-block">
                 <span class="percent-off p-1 rounded">17%</span>
-                 <img  class="rounded" src="./images/sm God of war.jpg" alt="">
+                 <img class="small-product-image rounded" src="./images/sm God of war.jpg" alt="">
               </a>
               <div class="product-details py-2 justify-content-around">
                   <div class="d-flex justify-content-between"><p class="product-name align-self-center">God of War</p></div>
@@ -670,14 +685,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                      <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                      <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                   </div>
               </div>
           </div>
             <div class="product">
               <a href="product.html " class="product-image d-block">
                 <span class="percent-off p-1 rounded">17%</span>
-                 <img  class="rounded" src="./images/sm hitman.jpg" alt=""> 
+                 <img class="small-product-image rounded" src="./images/sm hitman.jpg" alt=""> 
               </a>
               <div class="product-details py-2 justify-content-around">
                   <div class="d-flex justify-content-between"><p class="product-name align-self-center">Hitman III</p> </div>
@@ -686,20 +701,20 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                      <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                      <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                   </div>
               </div>
           </div>
         
             <div class="product">
               <a href="product.html " class="product-image d-block">
-               <img  class="rounded" src="./images/sm far cry 6.webp" alt="">
+               <img class="small-product-image rounded" src="./images/sm far cry 6.webp" alt="">
               </a>
               <div class="product-details py-2 justify-content-around">
                   <div class="d-flex justify-content-between"><p class="product-name align-self-center">Far Cry 6</p> </div>
                   <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                       <p class="price">$31.99</p>
-                      <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                      <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                   </div>
               </div>
           </div>
@@ -707,7 +722,7 @@
             <div class="product">
               <a href="product.html " class="product-image d-block">
                 <span class="percent-off p-1 rounded">17%</span>
-                 <img  class="rounded" src="./images/sm gta5.jpg" alt="">
+                 <img class="small-product-image rounded" src="./images/sm gta5.jpg" alt="">
               </a>
               <div class="product-details py-2 justify-content-around">
                   <div class="d-flex justify-content-between"><p class="product-name align-self-center">GTA V</p> </div>
@@ -716,7 +731,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                      <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                      <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                   </div>
               </div>
           </div>
@@ -724,7 +739,7 @@
           <div class="product">
               <a href="product.html " class="product-image d-block">
                 <span class="percent-off p-1 rounded">17%</span>
-                 <img  class="rounded" src="./images/sm fifa.webp" alt="">
+                 <img class="small-product-image rounded" src="./images/sm fifa.webp" alt="">
               </a>
               <div class="product-details py-2 justify-content-around">
                   <div class="d-flex justify-content-between"><p class="product-name align-self-center">FIFA 22</p> </div>
@@ -733,14 +748,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                      <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                      <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                   </div>
               </div>
           </div>
           <div class="product">
               <a href="product.html " class="product-image d-block">
                 <span class="percent-off p-1 rounded">17%</span>
-                 <img  class="rounded" src="./images/sm fortnite.webp" alt="">
+                 <img class="small-product-image rounded" src="./images/sm fortnite.webp" alt="">
               </a>
               <div class="product-details py-2 justify-content-around">
                   <div class="d-flex justify-content-between"><p class="product-name align-self-center">Fortnite</p> </div>
@@ -749,7 +764,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                      <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                      <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                   </div>
               </div>
           </div>
@@ -757,7 +772,7 @@
           <div class="product">
               <a href="product.html " class="product-image d-block">
                 <span class="percent-off p-1 rounded">17%</span>
-                 <img  class="rounded" src="./images/sm fm.jpg" alt="">
+                 <img class="small-product-image rounded" src="./images/sm fm.jpg" alt="">
               </a>
               <div class="product-details py-2 justify-content-around">
                   <div class="d-flex justify-content-between"><p class="product-name align-self-center">FM 22</p> </div>
@@ -766,7 +781,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                      <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                      <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                   </div>
               </div>
           </div>
@@ -778,7 +793,7 @@
         <div class="product">
             <a href="product.html " class="product-image d-block">
               <span class="percent-off p-1 rounded">17%</span>
-               <img class="rounded" src="./images/sm cyberpunk.jpg" alt="">
+               <img class="small-product-image rounded" src="./images/sm cyberpunk.jpg" alt="">
             </a>
             <div class="product-details py-2 justify-content-around">
                  <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -787,7 +802,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                    <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                    <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                 </div>
             </div>
         </div>
@@ -795,7 +810,7 @@
         <div class="product">
           <a href="product.html " class="product-image d-block">
             <span class="percent-off p-1 rounded">17%</span>
-             <img  class="rounded" src="./images/sm lego.webp" alt="">
+             <img class="small-product-image rounded" src="./images/sm lego.webp" alt="">
           </a>
           <div class="product-details py-2 justify-content-around">
                <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -804,14 +819,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
       </div>
         <div class="product">
           <a href="product.html " class="product-image d-block">
             <span class="percent-off p-1 rounded">17%</span>
-             <img  class="rounded" src="./images/sm prey.webp" alt=""> 
+             <img class="small-product-image rounded" src="./images/sm prey.webp" alt=""> 
           </a>
           <div class="product-details py-2 justify-content-around">
                <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -820,20 +835,20 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
       </div>
     
         <div class="product">
           <a href="product.html " class="product-image d-block">
-           <img  class="rounded" src="./images/sm wwz.jpg" alt="">
+           <img class="small-product-image rounded" src="./images/sm wwz.jpg" alt="">
           </a>
           <div class="product-details py-2 justify-content-around">
                <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
               <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                   <p class="price">$31.99</p>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
       </div>
@@ -841,7 +856,7 @@
         <div class="product">
           <a href="product.html " class="product-image d-block">
             <span class="percent-off p-1 rounded">17%</span>
-             <img  class="rounded" src="./images/sm tiny tina.jpg" alt="">
+             <img class="small-product-image rounded" src="./images/sm tiny tina.jpg" alt="">
           </a>
           <div class="product-details py-2 justify-content-around">
                <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -850,7 +865,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
       </div>
@@ -858,7 +873,7 @@
       <div class="product">
           <a href="product.html " class="product-image d-block">
             <span class="percent-off p-1 rounded">17%</span>
-             <img  class="rounded" src="./images/sm tomb raider.jpg" alt="">
+             <img class="small-product-image rounded" src="./images/sm tomb raider.jpg" alt="">
           </a>
           <div class="product-details py-2 justify-content-around">
                <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -867,14 +882,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
       </div>
       <div class="product">
           <a href="product.html " class="product-image d-block">
             <span class="percent-off p-1 rounded">17%</span>
-             <img  class="rounded" src="./images/sm rocket league.webp" alt="">
+             <img class="small-product-image rounded" src="./images/sm rocket league.webp" alt="">
           </a>
           <div class="product-details py-2 justify-content-around">
                <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -883,7 +898,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
       </div>
@@ -891,7 +906,7 @@
       <div class="product">
           <a href="product.html " class="product-image d-block">
             <span class="percent-off p-1 rounded">17%</span>
-             <img  class="rounded" src="./images/sm sifu.jpg" alt="">
+             <img class="small-product-image rounded" src="./images/sm sifu.jpg" alt="">
           </a>
           <div class="product-details py-2 justify-content-around">
                <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -900,7 +915,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
       </div>
@@ -916,7 +931,7 @@
           <div class="product">
                   <a href="product.html " class="product-image d-block">
                     <span class="percent-off p-1 rounded">17%</span>
-                     <img class="rounded" src="./images/xbox-controller.png" alt="">
+                     <img class="small-product-image rounded" src="./images/xbox-controller.png" alt="">
                   </a>
                   <div class="product-details py-2 justify-content-around">
                        <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -925,7 +940,7 @@
                             <p class="slashed-price pe-2 align-self-center">$42.99</p>
                             <p class="price">$31.99</p>
                         </div>
-                          <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                          <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                       </div>
                   </div>
               </div>
@@ -933,7 +948,7 @@
               <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/Daco Headset.png" alt="">
+                   <img class="small-product-image rounded" src="./images/Daco Headset.png" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -942,7 +957,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -950,7 +965,7 @@
             <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/xbox series x.png" alt="">
+                   <img class="small-product-image rounded" src="./images/xbox series x.png" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -959,7 +974,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -967,7 +982,7 @@
               <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/ps4 controller.png" alt=""> 
+                   <img class="small-product-image rounded" src="./images/ps4 controller.png" alt=""> 
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -976,14 +991,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
             <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/nintendo-colored.png" alt="">
+                   <img class="small-product-image rounded" src="./images/nintendo-colored.png" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -992,20 +1007,20 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
           
               <div class="product">
                 <a href="product.html " class="product-image d-block">
-                 <img  class="rounded" src="./images/Sony PS5 Digital Edition.G15.watermarked.2k.png" alt="">
+                 <img class="small-product-image rounded" src="./images/Sony PS5 Digital Edition.G15.watermarked.2k.png" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
                     <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                         <p class="price">$31.99</p>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -1013,7 +1028,7 @@
               <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/keyboard-mouse.png" alt="">
+                   <img class="small-product-image rounded" src="./images/keyboard-mouse.png" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -1022,7 +1037,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -1030,7 +1045,7 @@
             <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/ps5 controller.png" alt="">
+                   <img class="small-product-image rounded" src="./images/ps5 controller.png" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -1039,7 +1054,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -1047,7 +1062,7 @@
             <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/nintendo-black.png" alt="">
+                   <img class="small-product-image rounded" src="./images/nintendo-black.png" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -1056,14 +1071,14 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
             <div class="product">
                 <a href="product.html " class="product-image d-block">
                   <span class="percent-off p-1 rounded">17%</span>
-                   <img  class="rounded" src="./images/xbox-console.png" alt="">
+                   <img class="small-product-image rounded" src="./images/xbox-console.png" alt="">
                 </a>
                 <div class="product-details py-2 justify-content-around">
                      <div class="d-flex justify-content-between"><p class="product-name align-self-center">Evil dead </p> </div>
@@ -1072,7 +1087,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded px-2 py-1"><i class="fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             </div>
@@ -1084,7 +1099,7 @@
     <h4><i class="fa-solid fa-newspaper"></i> News</h4>
     <section class="news my-4">
         <div class="headlines">
-            <img class="rounded" src="images/ps5 news.jpg" alt="">
+            <img class="small-product-image rounded" src="images/ps5 news.jpg" alt="">
             <div class="headlines-detail p-2">
                 <p>NEWS</p>
                 <div class="d-flex justify-content-between">
@@ -1095,7 +1110,7 @@
         </div>
     
         <div class="headlines">
-            <img class="rounded" src="images/fifa news.jpg" alt="">
+            <img class="small-product-image rounded" src="images/fifa news.jpg" alt="">
             <div class="headlines-detail p-2">
                 <p>NEWS</p>
                 <div class="d-flex justify-content-between">
@@ -1105,7 +1120,7 @@
             </div>
         </div>
         <div class="headlines">
-            <img class="rounded" src="images/7445.jpg" alt="">
+            <img class="small-product-image rounded" src="images/7445.jpg" alt="">
             <div class="headlines-detail p-2">
                 <p>NEWS</p>
                 <div class="d-flex justify-content-between">
@@ -1198,8 +1213,9 @@
 <script type="text/javascript" src="./slick.min.js"></script>
 <script type="text/javascript" src="./slick.min.js"></script>
 <script type="text/javascript">
+
 $('.product-slider').slick({
-infinite: true,
+infinite: false,
 variableWidth: true,
 slidesToScroll: 2,
 arrows: true,

@@ -107,7 +107,7 @@ window.onload = ()=> {
     setTimeout(() => {
         page.style.display ="block"
         load.style.display ="none"
-    }, 3000)
+    }, 2000)    
 }
 
 // Beginning of Timi's JS; fear not, no danger here.
@@ -141,3 +141,58 @@ function displayComing(){
     topCategory_El.style.display = 'none'
     NewCategory_El.style.display = 'none'
 }
+
+/*ADD TO CART*/
+
+let addCartBtn = document.querySelectorAll(".addCart")
+let addtoCartBtn = document.querySelectorAll(".addCart")
+let counter = document.getElementsByClassName('cart-counter')[0];
+let cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
+
+function checkCartContent () {
+    if(cartItems == null){
+        console.log('empty');
+        cartItems = []
+    } 
+    else{
+        return
+    }
+}
+checkCartContent();
+
+addtoCartBtn.forEach(item=> {
+item.addEventListener('click', (event) => {
+update(event.target);
+})});
+
+function update(currentProduct){
+    let productCont = currentProduct.parentElement.parentElement.parentElement.parentElement
+    let productPrice = productCont.getElementsByClassName('price')[0].innerText
+    productPrice = productPrice.replace('$', '')
+    let slashedPrice = productCont.getElementsByClassName('slashed-price')[0].innerText
+    slashedPrice = slashedPrice.replace('$', '')
+    let productName = productCont.getElementsByClassName('product-name')[0].innerText
+    let percentOff = productCont.getElementsByClassName('percent-off')[0].innerText
+    percentOff = percentOff.replace('%', '')
+    let smImageSrc = productCont.getElementsByClassName('small-product-image')[0].src
+
+    if (cartItems.length == 0 || cartItems == undefined){
+        cartItems.push({product : productName,  price : productPrice, image: smImageSrc, 
+            inCart : 1, slashed : slashedPrice, percent: percentOff });
+        }
+        else {
+            for (let j = 0; j < cartItems.length; j++){
+            if (cartItems[j].product === productName){
+               alert('already in cart')
+                return
+            }
+        }
+        cartItems.push({product : productName,  price : productPrice, image: smImageSrc, inCart : 1, slashed : slashedPrice, percent: percentOff});
+        }
+let cart = JSON.stringify(cartItems);
+sessionStorage.setItem('cartItems', cart);
+counter.innerText = JSON.parse(sessionStorage.getItem('cartItems')).length
+}
+
+
+counter.innerText =  JSON.parse(sessionStorage.getItem('cartItems')).length
