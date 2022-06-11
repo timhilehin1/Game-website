@@ -22,6 +22,22 @@ body{
     color: white;
     position: relative;
 }
+.page{
+    display: none;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to  right, var(--lightGreen), var(--darkGreen));
+}
+.loading img{
+    height: 5rem;
+}
+
 .blur{
     backdrop-filter: blur(3px);
     width: 100%;
@@ -30,6 +46,28 @@ body{
     position: absolute;
    z-index: -2;  
 }
+.loader {
+    width:2.5rem;
+    height:2.5rem;
+    display:inline-block;
+    padding:0px;
+    border-radius:100%;
+    border:5px solid;
+    border-top-color:white;
+    border-bottom-color:rgba(255,255,255, 0.3);
+    border-left-color:white;
+    border-right-color:rgba(255,255,255, 0.3);
+    -webkit-animation: loader 1s ease-in-out infinite;
+    animation: loader 1s ease-in-out infinite;
+ }
+ @keyframes loader {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+ }
+ @-webkit-keyframes loader {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+ }
     a:hover{
         color: white;
     }
@@ -117,7 +155,7 @@ nav .fa-solid{
     color: white;
 }
 .product-name{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: white
 }
 .slashed-price{
@@ -138,7 +176,6 @@ nav .fa-solid{
 }
 .outer-container img {
     height: 10rem;
-    width: 8rem;
 }
 .outer-container{
     background-color:  rgb(39, 39, 39, .5);
@@ -148,13 +185,15 @@ nav .fa-solid{
     flex-direction: row;
 }
 
-
 .last {
     justify-content: space-between;
 }
+.subtotal{
+    font-size: 1.5rem;
+}
 
 
-.inc-btn, .dec-btn{
+.quantity-btn{
     background-color: rgb(32, 32, 32, 0);
     border: 1px solid white;
     border-radius: 50px;
@@ -183,6 +222,22 @@ nav .fa-solid{
     color: white;
    filter: brightness(95%);
    transition: all ease-in-out 200ms ;
+}
+.empty-cart img{
+    margin: 0 auto;
+    height: 10rem;
+
+    display: block;
+}
+
+.empty-cart a{
+    color: var(--lightGreen)
+}
+.empty-cart a:hover{
+    text-decoration: underline;
+}
+.cart-details{
+    display: none;
 }
 
 /* FOOTER*/
@@ -260,7 +315,6 @@ footer ul{
     }
     .outer-container img {
         height: 8rem;
-        width: 6rem;
     }
     footer .logo{
         display: block;

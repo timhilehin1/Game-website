@@ -149,7 +149,6 @@ let cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
 
 function checkCartContent () {
     if(cartItems == null){
-        console.log('empty');
         cartItems = []
     } 
     else{
@@ -165,6 +164,7 @@ update(event.target);
 
 function update(currentProduct){
     let productCont = currentProduct.parentElement.parentElement.parentElement.parentElement
+    console.log(productCont);
     let productPrice = productCont.querySelector('.price').innerText
     productPrice = productPrice.replace('$', '')
     let slashedPrice = productCont.querySelector('.slashed-price').innerText

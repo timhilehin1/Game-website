@@ -15,8 +15,12 @@
   </head>
 
   <body>
+    <div class="loading"><img src="images/cover.png" alt="">
+      <div class="loader mt-3">
+      </div>
+  </div>
     <div class="blur"></div>
-    <div class="container-fluid p-0">
+    <div class="page"><div class="container-fluid p-0">
       <nav class="d-flex justify-content-between">
         <div class="d-flex my-2">
           <i class="fa-solid fa-bars d-md-none align-self-center px-3"></i>
@@ -39,56 +43,34 @@
         </div>
       </nav>
     </div>
-    <div class="container sticky-top mt-2 p-0">
-      <div class="justify-content-md-between justify-content-end searchAndcart-container py-2 d-flex">
-        <div class="d-none d-md-flex search-button align-self-center">
-          <button class="p-2 rounded-start">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <input class="rounded-end" type="search" placeholder="Search" />
-        </div>
-        <p class="align-self-center p-2 cart rounded"><i class="fa-solid fa-cart-shopping"></i><span class="cart-counter ps-2">0</span></p>
-      </div>
-    </div>
-
+    
     <div class="container my-5 cart-container">
-      <h4>My Cart(1)</h4>
-      <div class="row w-100 gx-0 gx-lg-3">
-        <div class="all-cart-items col-lg-8 col-12">
-          <div class="w-100 d-flex p-3 outer-container mb-3 justify-content-between w-100 rounded flex-row">
-            <div class="d-flex flex-md-row px-2 flex-column-reverse"><img src="images/Daco Headset.png" class="rounded"/>
-              <p class="product-name px-md-4">Far cry 5</p></div>
-              <div class="d-flex flex-column gap-2 ps-3">
-                <div class="d-flex discount">
-                  <p class="product-price">$37.99</p>
-                  <p class="slashed-price align-self-center">$42.99</p>
-                  <div class="align-items-center d-flex"> <p class="percent-off px-2 py-1 rounded">-17%</p> </div>
-                </div>
-                <p class="sale-end">Sale ends on 30/6/2022 at 12pm</p>
-                <div class="counter d-flex ">
-                  <button class="dec-btn">-</button>
-                  <p class="num">0</p>
-                  <button class="inc-btn">+</button>
-                </div>
 
-                  <a class="remove mt-3" href="#"> <i class="pe-1 fa-solid fa-trash-can"></i>Remove</a>
-              </div>
-           
-          </div>
-          
+      <div class="empty-cart w-100 p-3 text-center mb-5">
+        <img src="images/cart.png" alt="">
+        <h5 class="fw-bold">Cart is empty</h5>
+        <p>Looks like you have no items in your shopping Cart</p>
+        <p>Click <a href="index.html">Here</a> to continue shopping</p>
+      </div>
+
+      <div class="row w-100 gx-0 gx-lg-3 cart-details">
+        <h4>My Cart (<span class="cart-size"></span>)</h4>
+        <div class="all-cart-items col-lg-8 col-12">
         </div>
         
-
-        <div class="col-lg-4 col-12 checkout-container">
-          <p class="summary mt-2">CART SUMMARY</p>
-          <hr class="mt-0" />
-          <div class="subtotal-cont d-flex justify-content-between">
-            <p class="subtotal">Subtotal</p>
-            <p class="subtotal">$37.99</p>
-          </div>
-          <hr class="mt-1" />
-          <button class="buy-now px-2 py-2 rounded w-100" type="button">Buy Now</button>
-        </div>
+<div class="col-lg-4 col-12">
+  <div class=" checkout-container py-3 sticky-top">
+    <p class="summary mt-2">CART SUMMARY</p>
+    <hr class="mt-0" />
+    <div class="subtotal-cont d-flex justify-content-between">
+      <p>Subtotal</p>
+      <p class="subtotal">0</p>
+    </div>
+    <hr class="mt-1" />
+    <button class="buy-now px-2 py-2 rounded w-100" type="button">Buy Now</button>
+  </div>
+</div>
+        
       </div>
     </div>
     
@@ -144,6 +126,10 @@
               </ul>
           </div>
       </div>
-  </footer>
+  </footer></div>
+
+    
+
+  <script src="cart.js"></script>
   </body>
 </html>

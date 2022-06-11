@@ -235,12 +235,12 @@ box-shadow: inset 17rem 0 0 0 white;
     font-weight: bold;
     display: inline-block;
 }
-.carousel .off{
+.carousel .percent-off{
     color: white;
     background-color: firebrick;
     font-size: .9rem;
 }
-.carousel .product-price{
+.carousel .price{
     color: white;
     font-size: 2.5rem;
 }
@@ -311,6 +311,7 @@ font-style: italic;
     color: white;
 }
 .addCart{
+    font-size: 1.2rem;
     outline: 0;
     border: 0;
     color: white;
@@ -321,7 +322,7 @@ font-style: italic;
     transform: scale(.9);
 }
 
-.percent-off{
+.product .percent-off{
     position: absolute;
     top: 0;
     right: 0;
@@ -331,13 +332,13 @@ font-style: italic;
     font-size: .85rem;
     margin: .3rem;
 }
-.slashed-price{
+.product .slashed-price{
     text-decoration: line-through;
     color:rgb(255, 255, 255, .6);
     font-weight: bold;
     font-size: .7rem;
 }
-.price{
+.product  .price{
     font-weight: bold;
     font-size: 1.3rem;
 }
@@ -727,7 +728,6 @@ footer .logo{
 }
 @media(min-width: 769px){
     .content{
-        width: 82%;
         margin: 0 auto;
     }
     .sign-in > div{
