@@ -143,8 +143,6 @@ function displayComing(){
 }
 
 /*ADD TO CART*/
-
-let addCartBtn = document.querySelectorAll(".addCart")
 let addtoCartBtn = document.querySelectorAll(".addCart")
 let counter = document.getElementsByClassName('cart-counter')[0];
 let cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
@@ -167,14 +165,14 @@ update(event.target);
 
 function update(currentProduct){
     let productCont = currentProduct.parentElement.parentElement.parentElement.parentElement
-    let productPrice = productCont.getElementsByClassName('price')[0].innerText
+    let productPrice = productCont.querySelector('.price').innerText
     productPrice = productPrice.replace('$', '')
-    let slashedPrice = productCont.getElementsByClassName('slashed-price')[0].innerText
+    let slashedPrice = productCont.querySelector('.slashed-price').innerText
     slashedPrice = slashedPrice.replace('$', '')
-    let productName = productCont.getElementsByClassName('product-name')[0].innerText
-    let percentOff = productCont.getElementsByClassName('percent-off')[0].innerText
+    let productName = productCont.querySelector('.product-name').innerText
+    let percentOff = productCont.querySelector('.percent-off').innerText
     percentOff = percentOff.replace('%', '')
-    let smImageSrc = productCont.getElementsByClassName('small-product-image')[0].src
+    let smImageSrc = productCont.querySelector('.small-product-image').src
 
     if (cartItems.length == 0 || cartItems == undefined){
         cartItems.push({product : productName,  price : productPrice, image: smImageSrc, 
