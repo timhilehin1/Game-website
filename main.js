@@ -84,10 +84,9 @@ carousel.addEventListener('mouseenter',() =>{
 })
 carousel.addEventListener('mouseleave', autoplay) // listens for when mouse leaves carousel and starts carousel autoplay
 
-/*
+
 let product = document.querySelectorAll(".product-image")
 let test = []
-console.log(product)
 product.forEach(product => {
     product.addEventListener("click", (event)=>{
         productPage(event.target);
@@ -96,11 +95,17 @@ product.forEach(product => {
 function productPage(product){
 let productCon = product.parentElement.parentElement
 let name = productCon.getElementsByClassName('product-name')[0].innerText;
-test[0] = name;
-let send = JSON.stringify(test);
-localStorage.setItem("product-page", send)
+let imgSrc = productCon.getElementsByClassName('large-product-image')[0].src;
+let price = productCon.getElementsByClassName('price')[0].innerText
+let logo = productCon.getElementsByClassName('product-logo')[0].src
+
+test[0] = {prod_name : name, prod_img: imgSrc, prod_price: price, prod_logo:logo
 }
-*/
+let send = JSON.stringify(test);
+sessionStorage.setItem('send', send)
+console.log(send)
+}
+
 window.onload = ()=> {
     let load = document.getElementsByClassName('loading')[0]
     let page = document.getElementsByClassName('page')[0]
