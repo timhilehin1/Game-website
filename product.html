@@ -13,127 +13,98 @@
 </head>
 
 <body>
+    <div class="loading"><img src="images/cover.png" alt="">
+        <div class="loader mt-3">
+        </div>
+    </div>
     <div class="blur"></div>
-    <div class="container-fluid p-0">
-        <nav class="d-flex justify-content-between">
-<div class="d-flex my-2">
-<i class="fa-solid fa-bars d-md-none align-self-center px-3"></i>
-<a href="index.html" class="pe-2 align-self-center"><img class="nav-logo" src="./images/cover.png" alt="company logo"></a> 
-<ul class="px-2 m-0 align-self-center d-none d-md-block">
-    <li><a class="px-2 py-3 active-nav" href="">STORE</a> </li>
-    <li><a class="px-2 py-3" href="">HELP</a> </li>
-    <li><a class="px-2 py-3" href="">ABOUT</a> </li>
-</ul>
-</div>
-<div class="d-flex align-items-center">
-<i class="fa-solid fa-magnifying-glass d-md-none align-self-center me-3"></i>
-<a class="align-self-center me-3 d-flex" href="Signin.html"><i class="fa-solid fa-user px-2 align-self-center"></i><span class="d-none d-md-block">SIGN IN</span></a>
-<a href=""><i class="fa-solid fa-heart p-3 wishlist"></i></a>
-</div>
-        </nav>
+    <div class="page">
+        <div class="container-fluid p-0">
+            <nav class="d-flex justify-content-between">
+    <div class="d-flex my-2">
+    <i class="fa-solid fa-bars d-md-none align-self-center px-3"></i>
+    <a href="index.html" class="pe-2 align-self-center"><img class="nav-logo" src="./images/cover.png" alt="company logo"></a> 
+    <ul class="px-2 m-0 align-self-center d-none d-md-block">
+        <li><a class="px-2 py-3 active-nav" href="">STORE</a> </li>
+        <li><a class="px-2 py-3" href="">HELP</a> </li>
+        <li><a class="px-2 py-3" href="">ABOUT</a> </li>
+    </ul>
     </div>
-    <div class="container sticky-top mt-2 p-0">
-        <div class="justify-content-md-between justify-content-end searchAndcart-container py-2 d-flex">
-            <div class="d-none d-md-flex search-button align-self-center">
-                <button class="p-2 rounded-start"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input class="rounded-end" type="search" placeholder="Search">
-            </div>
-         <a class="align-self-center p-2 cart rounded" href="cart.html"><i class="fa-solid fa-cart-shopping "></i><span class="cart-counter ps-2">0</span></a>
+    <div class="d-flex align-items-center">
+    <i class="fa-solid fa-magnifying-glass d-md-none align-self-center me-3"></i>
+    <a class="align-self-center me-3 d-flex" href="Signin.html"><i class="fa-solid fa-user px-2 align-self-center"></i><span class="d-none d-md-block">SIGN IN</span></a>
+    <a href=""><i class="fa-solid fa-heart p-3 wishlist"></i></a>
+    </div>
+            </nav>
         </div>
+        <!---CART COUNTER-->
+<div class="container sticky-top p-0">
+    <div class="justify-content-md-between justify-content-end searchAndcart-container py-2 d-flex">
+        <div class="d-none d-md-flex search-button align-self-center">
+            <button class="p-2 rounded-start"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="rounded-end" type="search" placeholder="Search">
+        </div>
+     <a class="align-self-center p-2 cart rounded" href="cart.html"><i class="fa-solid fa-cart-shopping p-2">
+     </i><span class="cart-counter"></span></a>
     </div>
+</div>
+        
+        <div class="container product-info mb-5">
+        </div>
     
-    <div class="container product-info mb-5">
-        <hr class="w-100 my-3">
-
-    <h2 class="Game-title">FAR CRY 6</h2>
-
-    <div class="overviewcont mb-2">
-    <p class="overview-active">OVERVIEW</p>
-    <p class="">Add ONS</p>
-    <p class="">FAQ</p>
-    </div>
-
-    <div class="row gx-3">
-    <div class="col-lg-8 col-md-8 col-sm-12">
-     <img src = "images/far cry 6.png" class="img-fluid productInfoImg" alt="Responsive image">
-     <p class="description my-2">Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Roll your own multiclass hero then shoot, loot, slash, and cast on a quest to stop the Dragon Lord.</p>
-    </div>
-
-    <div class="col-sm-12 col-md-4 col-lg-4">
-        <img class="thumbnail d-none d-md-block " src=" images/far cry 6.png">
-        <div class="price-container mt-2 d-flex gap-2">
-            <p class="actual-price align-self-center">$37.99</p>
-         <p class="slashed-price align-self-center">$42.99</p>
-          <div class="d-flex align-items-center"><p class="percent-off px-2 py-1 rounded">-17%</p></div>
+        <footer class="px-lg-5 py-lg-3 p-3">
+            <div class="w-100 d-flex justify-content-end to-top"><a href="#"><i class="fa-solid fa-square-caret-up"></i></a></div>
+            <div class="d-flex flex-column flex-lg-row gap-3">
+    <div class="pb-4"><img class="logo" src="images/cover.png" alt=""></div>
+    <div class="newsletter">
+        <p class="fw-bold">NEW TO T&M</p>
+        <span class="">Subscribe to our newsletter to get updates on our latest offers!</span>
+        <div class="d-flex mt-2">
+            <input class="rounded-start px-2" type="text">
+            <button class="px-2 py-1 fw-bold rounded-end">SUBSCRIBE</button>
         </div>
-        <p class="sale-end mt-2 ">Sale ends on 30/6/2022 at 12pm</p>
-        <div class="d-grid gap-2 col-12">
-            <button class="btn my-2 buy-now py-2" type="button">Buy Now</button>
-            <button type="button" class="btn my-1 addCart rounded py-2"><i class="fa-solid fa-cart-shopping "></i> Add to Cart</button>
-            <button type="button" class="btn my-1 add rounded py-2"><i class="fa-solid fa-circle-plus"></i> Add to wishlist</button>
-        <div class="d-flex justify-content-between">
-        <p class="Developer-text text-secondary">Developer</p>
-        <p class="manufacturer">Menu & Sons</p>
+    </div>
+    <div class="app d-none d-lg-block">
+        <div class="d-flex"><img src="" alt=""> <p class="align-self-center ms-1 fw-bold">Download T&M Free App</p> </div>
+        <div class="d-flex">
+            <a class="me-2 rounded px-3 py-2" href=""> <i class="fa-brands fa-apple me-1"></i> Apple</a>
+            <a class="rounded px-3 py-2" href=""><i class="fa-brands fa-google-play me-1"></i> Google</a>
         </div>
-        <hr class="mt-1">
+    </div>
             </div>
-    </div>
-    </div>
-    </div>
-  
-
-
-    <footer class="px-lg-5 py-lg-3 p-3">
-        <div class="w-100 d-flex justify-content-end to-top"><a href="#"><i class="fa-solid fa-square-caret-up"></i></a></div>
-        <div class="d-flex flex-column flex-lg-row gap-3">
-<div class="pb-4"><img class="logo" src="images/cover.png" alt=""></div>
-<div class="newsletter">
-    <p class="fw-bold">NEW TO T&M</p>
-    <span class="">Subscribe to our newsletter to get updates on our latest offers!</span>
-    <div class="d-flex mt-2">
-        <input class="rounded-start px-2" type="text">
-        <button class="px-2 py-1 fw-bold rounded-end">SUBSCRIBE</button>
-    </div>
-</div>
-<div class="app d-none d-lg-block">
-    <div class="d-flex"><img src="" alt=""> <p class="align-self-center ms-1 fw-bold">Download T&M Free App</p> </div>
-    <div class="d-flex">
-        <a class="me-2 rounded px-3 py-2" href=""> <i class="fa-brands fa-apple me-1"></i> Apple</a>
-        <a class="rounded px-3 py-2" href=""><i class="fa-brands fa-google-play me-1"></i> Google</a>
-    </div>
-</div>
-        </div>
-
-        <div class="d-flex flex-column flex-lg-row gap-3 py-3">
-            <div>
-                <p class="fw-bold">ABOUT T&M</p>
-                <ul>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Terms of Service</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div>
-                <p class="fw-bold">CONNECT WITH US</p>
-                <div class="d-flex gap-3 mt-2">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+    
+            <div class="d-flex flex-column flex-lg-row gap-3 py-3">
+                <div>
+                    <p class="fw-bold">ABOUT T&M</p>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="fw-bold">CONNECT WITH US</p>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="fw-bold">PAYMENTS</p>
+                    <ul class="d-flex gap-2">
+                        <li><img src="images/visa.png" alt=""></li>
+                        <li><img src="images/mastercard-26132.png" alt=""></li>
+                        <li><img src="images/paypal.png" alt=""></li>
+                        <li><img src="images/verve.png" alt=""></li>
+                    </ul>
                 </div>
             </div>
-            <div class="">
-                <p class="fw-bold">PAYMENTS</p>
-                <ul class="d-flex gap-2">
-                    <li><img src="images/visa.png" alt=""></li>
-                    <li><img src="images/mastercard-26132.png" alt=""></li>
-                    <li><img src="images/paypal.png" alt=""></li>
-                    <li><img src="images/verve.png" alt=""></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-<script src="product.js"></script>
+        </footer>
 
+    </div>
+   
+<script src="product.js"></script>
 </body>

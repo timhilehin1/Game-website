@@ -86,24 +86,26 @@ carousel.addEventListener('mouseleave', autoplay) // listens for when mouse leav
 
 
 let product = document.querySelectorAll(".product-image")
+
 let test = []
 product.forEach(product => {
     product.addEventListener("click", (event)=>{
         productPage(event.target);
     })
 });
+
 function productPage(product){
 let productCon = product.parentElement.parentElement
-let name = productCon.getElementsByClassName('product-name')[0].innerText;
-let imgSrc = productCon.getElementsByClassName('large-product-image')[0].src;
-let price = productCon.getElementsByClassName('price')[0].innerText
-let logo = productCon.getElementsByClassName('product-logo')[0].src
-
-test[0] = {prod_name : name, prod_img: imgSrc, prod_price: price, prod_logo:logo
-}
-let send = JSON.stringify(test);
-sessionStorage.setItem('send', send)
-console.log(send)
+let name  = productCon.querySelector(".product-name").innerText
+let logo  = productCon.querySelector(".product-logo").src
+let imageSrc  = productCon.querySelector(".large-product-image").src
+let smallImage  = productCon.querySelector(".small-product-image").src
+let price  = productCon.querySelector(".price").innerText
+let percent  = productCon.querySelector(".percent-off").innerText
+let slashed  = productCon.querySelector(".slashed-price").innerText
+test[0] = {product: name, logo : logo, image: imageSrc, price: price, slashedPrice: slashed, percent:percent, smallImage: smallImage}
+let productPage = JSON.stringify(test);
+sessionStorage.setItem('productPage', productPage);
 }
 
 window.onload = ()=> {
@@ -149,7 +151,7 @@ function displayComing(){
 
 /*ADD TO CART*/
 let addtoCartBtn = document.querySelectorAll(".addCart")
-let counter = document.getElementsByClassName('cart-counter')[0];
+let counter = document.querySelector('.cart-counter')
 let cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
 
 function checkCartContent () {
