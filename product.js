@@ -15,7 +15,6 @@ let cart = cartDetails.map(function(product){
         <hr class="w-100 my-3">
     
         <h2 class="product-title">${product.product}</h2>
-    
         <div class="overviewcont mb-2">
         <p class="overview-active">OVERVIEW</p>
         <p class="">Add ONS</p>
@@ -70,9 +69,8 @@ let cart = cartDetails.map(function(product){
         <div class="row gx-3">
         <div class="col-lg-8 col-md-8 col-sm-12">
         <div><img src = "${product.image}" class="img-fluid productInfoImg" alt="Responsive image"></div>
-        <img src = "${product.smallImage}" class="d-none small-product-image">
-         <p class="description my-2">Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry!
-         Roll your own multiclass hero then shoot, loot, slash, and cast on a quest to stop the Dragon Lord.</p>
+        <img src = ${product.smallImage} class="d-none small-product-image">
+         <p class="description my-2">${product.desc}</p>
         </div>
     
         <div class="col-sm-12 col-md-4 col-lg-4">

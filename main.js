@@ -102,8 +102,10 @@ let imageSrc  = productCon.querySelector(".large-product-image").src
 let smallImage  = productCon.querySelector(".small-product-image").src
 let price  = productCon.querySelector(".price").innerText
 let percent  = productCon.querySelector(".percent-off").innerText
-let slashed  = productCon.querySelector(".slashed-price").innerText
-test[0] = {product: name, logo : logo, image: imageSrc, price: price, slashedPrice: slashed, percent:percent, smallImage: smallImage}
+let slashed = productCon.querySelector(".slashed-price").innerText
+let description = productCon.querySelector(".desc").innerText
+
+test[0] = {product: name, logo : logo, image: imageSrc, price: price, slashedPrice: slashed, percent:percent, smallImage: smallImage, desc:description}
 let productPage = JSON.stringify(test);
 sessionStorage.setItem('productPage', productPage);
 }
