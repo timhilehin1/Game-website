@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -323,7 +322,9 @@ font-style: italic;
     transition: all ease-in-out 200ms;
     transform: scale(.9);
 }
-
+.product .product-name{
+    height: 2rem;
+}
 .product .percent-off{
     position: absolute;
     top: 0;
@@ -595,6 +596,11 @@ color: white;
     color: var(--lightGreen);
     box-shadow: inset 17rem 0 0 0 white;
 }
+.soonCategory .product-image{
+    filter: brightness(60%);
+}
+
+
 
 footer{
     background-color: rgb(20, 20, 20, .9);

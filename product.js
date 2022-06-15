@@ -8,6 +8,7 @@ window.onload = ()=> {
 }
 let cartDetails = JSON.parse(sessionStorage.getItem('productPage'))
 let productInfo = document.querySelector(".product-info")
+document.title = cartDetails[0].product
 let cart = cartDetails.map(function(product){
     if(product.slashedPrice ==""){
         return `
@@ -39,7 +40,7 @@ let cart = cartDetails.map(function(product){
             </div>
             <p class="sale-end mt-2 d-none">Sale ends on 30/6/2022 at 12pm</p>
             <div class="d-grid gap-2 col-12">
-            <a href="cart.html" class="btn my-2 addCart buy-now py-2" type="button">Buy Now</a>
+            <a href="cart.html" class=" text-center rounded my-2 addCart buy-now py-2" type="button">Buy Now</a>
             <button type="button" class=" my-1 add addCart rounded py-2"><i class="fa-solid fa-cart-shopping "></i> Add to Cart</button>
             <button type="button" class=" my-1 add rounded py-2"><i class="fa-solid fa-circle-plus"></i> Add to wishlist</button>
             <div class="d-flex justify-content-between">
@@ -84,7 +85,7 @@ let cart = cartDetails.map(function(product){
             </div>
             <p class="sale-end mt-2">Sale ends on 30/6/2022 at 12pm</p>
             <div class="d-grid gap-2 col-12">
-            <a href="cart.html" class="btn my-2 buy-now py-2 addCart" type="button">Buy Now</a>
+            <a href="cart.html" class="text-center rounded my-2 buy-now py-2 addCart" type="button">Buy Now</a>
                 <button type="button" class=" my-1 add addCart rounded py-2"><i class="fa-solid fa-cart-shopping "></i> Add to Cart</button>
                 <button type="button" class=" my-1 add rounded py-2"><i class="fa-solid fa-circle-plus"></i> Add to wishlist</button>
             <div class="d-flex justify-content-between">
