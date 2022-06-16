@@ -56,7 +56,7 @@ function createCart(){
               <p class="checkout-quantity mx-2">${item.inCart}</p>
               <button class="quantity-btn">+</button>
             </div>
-              <a class="remove" href="#"> <i class=" fa-solid fa-trash-can pe-1"></i>Remove</a>
+              <a class="remove mt-2" href="#"> <i class=" fa-solid fa-trash-can pe-1"></i>Remove</a>
           </div>
        
       </div> `;
@@ -77,7 +77,7 @@ function createCart(){
                   <p class="checkout-quantity mx-2">${item.inCart}</p>
                   <button class="quantity-btn">+</button>
                 </div>
-                  <a class="remove" href="#"> <i class=" fa-solid fa-trash-can pe-1"></i>Remove</a>
+                  <a class="remove mt-2" href="#"> <i class=" fa-solid fa-trash-can pe-1"></i>Remove</a>
               </div>
            
           </div> `
