@@ -1,3 +1,12 @@
+function loadingScreen (){
+    let load = document.getElementsByClassName('loading')[0]
+    let page = document.getElementsByClassName('page')[0]
+    setTimeout(() => {
+        page.style.display ="block"
+        load.style.display ="none"
+    }, 5000)    
+}
+loadingScreen();
 
 let carouselImg = document.getElementsByClassName('carousel-img')
 //check browser width and set appropriate Carousel image according to browser width
@@ -110,14 +119,7 @@ let productPage = JSON.stringify(test);
 sessionStorage.setItem('productPage', productPage);
 }
 
-window.onload = ()=> {
-    let load = document.getElementsByClassName('loading')[0]
-    let page = document.getElementsByClassName('page')[0]
-    setTimeout(() => {
-        page.style.display ="block"
-        load.style.display ="none"
-    }, 2000)    
-}
+
 
 // Beginning of Timi's JS; fear not, no danger here.
 NewCategory_El = document.querySelector(".newCategory")
@@ -200,6 +202,4 @@ let cart = JSON.stringify(cartItems);
 sessionStorage.setItem('cartItems', cart);
 counter.innerText = JSON.parse(sessionStorage.getItem('cartItems')).length
 }
-
-
 counter.innerText =  JSON.parse(sessionStorage.getItem('cartItems')).length

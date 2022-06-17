@@ -1,11 +1,13 @@
-window.onload = ()=> {
+function loadingScreen (){
     let load = document.getElementsByClassName('loading')[0]
     let page = document.getElementsByClassName('page')[0]
     setTimeout(() => {
         page.style.display ="block"
         load.style.display ="none"
-    }, 1000)    
+    }, 5000)    
 }
+loadingScreen();
+
 let cartDetails = JSON.parse(sessionStorage.getItem('productPage'))
 let productInfo = document.querySelector(".product-info")
 document.title = cartDetails[0].product

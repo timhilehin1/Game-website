@@ -1,11 +1,12 @@
-window.onload = ()=> {
+function loadingScreen (){
     let load = document.getElementsByClassName('loading')[0]
     let page = document.getElementsByClassName('page')[0]
     setTimeout(() => {
         page.style.display ="block"
         load.style.display ="none"
-    }, 1000)    
+    }, 5000)    
 }
+loadingScreen();
 
 let cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
 let emptyCart = document.querySelector(".empty-cart")
