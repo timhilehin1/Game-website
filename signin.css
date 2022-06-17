@@ -66,13 +66,20 @@ img{
     /*Change Blinking cursor in Search bar to white*/
     caret-color: white;
 }
-a{
+.link{
     text-align: center;
     color: rgba(255, 255, 255, 0.72);
     margin-top: 8px;
    
 }
-a:hover{
+.btn-link{
+text-decoration: none;
+color: white;
+}
+.btn-link:hover{
+    color: white;
+}
+.link:hover{
   color: var(--darkGreen);
 }
 .account{

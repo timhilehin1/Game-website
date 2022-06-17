@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --darkGreen :#096e8d;
-    --lightGreen:#5bd0a4;
+
+:root {
+    --darkGreen: #096e8d;
+    --lightGreen: #5bd0a4;
 }
-body{
+
+body {
     font-family: 'Kanit', sans-serif;
     overflow-x: hidden;
-    background-image:url(images/wallpaper.jpg);
+    background-image: url(images/wallpaper.jpg);
     background-color: rgb(0, 0, 0, .8);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
@@ -22,292 +25,374 @@ body{
     color: white;
     position: relative;
 }
-.page{
+
+.page {
     display: none;
 }
-.loading{
+
+.loading {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to  right, var(--lightGreen), var(--darkGreen));
+    background-image: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
 }
-.loading img{
+
+.loading img {
     height: 5rem;
 }
 
-.blur{
+.btn-close {
+    color: white;
+    background-color: white;
+}
+
+.offcanvas {
+    background-color: rgb(0, 0, 0, .8);
+    width: 200px;
+}
+
+.sidebar-logo {
+    height: 1.5rem;
+}
+
+.blur {
     backdrop-filter: blur(3px);
     width: 100%;
     height: 100%;
     background-attachment: fixed;
     position: absolute;
-   z-index: -2;  
+    z-index: -2;
 }
+
 .loader {
-    width:2.5rem;
-    height:2.5rem;
-    display:inline-block;
-    padding:0px;
-    border-radius:100%;
-    border:5px solid;
-    border-top-color:white;
-    border-bottom-color:rgba(255,255,255, 0.3);
-    border-left-color:white;
-    border-right-color:rgba(255,255,255, 0.3);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    padding: 0px;
+    border-radius: 100%;
+    border: 5px solid;
+    border-top-color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-left-color: white;
+    border-right-color: rgba(255, 255, 255, 0.3);
     -webkit-animation: loader 1s ease-in-out infinite;
     animation: loader 1s ease-in-out infinite;
- }
- @keyframes loader {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
- }
- @-webkit-keyframes loader {
-    from {-webkit-transform: rotate(0deg);}
-    to {-webkit-transform: rotate(360deg);}
- }
-    a:hover{
-        color: white;
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(0deg);
     }
-a{
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loader {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+a:hover {
+    color: white;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
 
-html{
+html {
     font-size: 19px;
 }
-nav{
+
+nav {
     background-color: rgb(39, 39, 39, .4);
     width: 100%;
 }
-.nav-logo{
+
+.nav-logo {
     height: 2.2rem;
 }
-nav ul{
+
+nav ul {
     display: inline-block;
     list-style: none;
 }
-nav li{
+
+nav li {
     display: inline-block;
     margin: 0 .2rem;
 }
-nav li a{
-    background-image: linear-gradient(to  right, var(--lightGreen), var(--darkGreen));
+
+nav li a {
+    background-image: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 0 2px;
     transition: background 400ms ease;
 }
-.active-nav{
+
+.active-nav {
     font-weight: bolder;
     background-size: 100% 3px;
 }
-nav li a:hover{
+
+nav li a:hover {
     background-size: 100% 3px;
     color: whitesmoke;
     cursor: pointer;
 }
-p{
+
+p {
     margin: 0;
 }
-nav .fa-solid{
+
+nav .fa-solid {
     color: white;
     font-size: 1rem;
 }
-.sticky{
+
+.sticky {
     position: sticky;
     top: 0;
     z-index: 10;
 }
-.cart, .wishlist{
+
+.cart,
+.wishlist {
     background-color: var(--lightGreen);
 }
-.search-button{
+
+.search-button {
     width: 25%;
     height: 2.5rem;
 }
-.search-button button{
+
+.search-button button {
     border: 0;
     outline: 0;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
 }
-.search-button i{
+
+.search-button i {
     color: whitesmoke;
 }
-.search-button input{
+
+.search-button input {
     width: 100%;
     border: 0;
     outline: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     color: white;
     padding-left: .5rem;
     /*Change Blinking cursor in Search bar to white*/
     caret-color: white;
 }
-hr{
+
+hr {
     height: 1px;
-    background-color:  rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.72);
     border: none;
 }
-h2{
+
+h2 {
     color: white;
 }
-.img-cont{
+
+.img-cont {
     height: 5rem;
     width: 100%;
     position: relative;
 }
-.thumbnail{
+
+.thumbnail {
     height: 100%;
 }
-.overviewcont{
+
+.overviewcont {
     display: flex;
     color: white;
     gap: 1rem;
     cursor: pointer;
 }
+
 .overviewcont p {
     color: rgba(245, 245, 245, 0.6);
 }
+
 .overviewcont p:hover {
     text-decoration: underline;
     color: var(--lightGreen);
 }
-.overviewcont p.overview-active{
-    color: white;
-}
-.overviewcont p.overview-active{
-    color: white;
-    text-decoration: none;
-}
-.product-info{
+
+.overviewcont p.overview-active {
     color: white;
 }
 
-.slashed-price{
+.overviewcont p.overview-active {
+    color: white;
+    text-decoration: none;
+}
+
+.product-info {
+    color: white;
+}
+
+.slashed-price {
     text-decoration: line-through;
     color: rgba(245, 245, 245, 0.6);
     font-weight: bold;
     font-size: 1rem;
 }
-.percent-off{
+
+.percent-off {
     background-color: firebrick;
 }
-.col-md-8 > div{
+
+.col-md-8>div {
     height: 25rem;
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
 }
-.col-md-8 > div img{
+
+.col-md-8>div img {
     height: 100%;
     border-radius: .3rem;
 }
-.price-container{
+
+.price-container {
     display: flex;
     gap: .5rem;
 }
-.actual-price{
+
+.actual-price {
     font-size: 1.8rem;
-    color:  #ffffff;
+    color: #ffffff;
 }
-.sale-end{
+
+.sale-end {
     font-size: .85rem;
 }
-.buy-now{
+
+.buy-now {
     border: 0;
     outline: 0;
-    background-image: linear-gradient(to  right, var(--lightGreen),var(--darkGreen));
+    background-image: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
     color: white;
 }
-.buy-now:hover{
+
+.buy-now:hover {
     transform: scale(.96);
     color: white;
-   filter: brightness(95%);
-   transition: all ease-in-out 200ms ;
+    filter: brightness(95%);
+    transition: all ease-in-out 200ms;
 }
-.add{
+
+.add {
     color: white;
     box-shadow: inset 0 0 0 0 white;
     transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
     border: .1rem solid white;
     background-color: rgb(0, 0, 0, 0);
 }
+
 .description {
     text-align: justify;
     font-size: 1.2rem;
 }
+
 .add:hover {
-color: var(--darkGreen);
-box-shadow: inset 29rem 0 0 0 white;
-  }
+    color: var(--darkGreen);
+    box-shadow: inset 29rem 0 0 0 white;
+}
 
 /* FOOTER*/
 
-.app{
+.app {
     background-color: none;
 }
-.app img{
-   height: 1.8rem; 
+
+.app img {
+    height: 1.8rem;
 }
-.app a{
+
+.app a {
     border: 1px white solid;
     color: white;
     box-shadow: inset 0 0 0 0 white;
     transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
 }
-.app a:active, .app a:hover{
+
+.app a:active,
+.app a:hover {
     border: 1px white solid;
     color: var(--lightGreen);
     box-shadow: inset 17rem 0 0 0 white;
 }
 
-footer{
+footer {
     background-color: rgb(20, 20, 20, .9);
     color: rgb(165, 165, 165);
 }
-footer span{
+
+footer span {
     color: white;
 }
+
 footer i {
     font-size: 1.5rem;
 }
-footer .to-top i{
+
+footer .to-top i {
     font-size: 2rem;
 }
-footer a:hover{
+
+footer a:hover {
     color: var(--lightGreen);
 }
-footer li{
+
+footer li {
     margin: .4rem 0;
 }
-footer li > img{
+
+footer li>img {
     height: 2.3rem;
 }
 
-footer input{
+footer input {
     width: 100%;
     border: 0;
     outline: 0;
 }
-footer button{
+
+footer button {
     border: 0;
     outline: 0;
-    background-image: linear-gradient(to right, var(--lightGreen), var(--darkGreen) );
+    background-image: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
     color: white;
 }
 
-footer div{
-    width:100%;
+footer div {
+    width: 100%;
 }
-footer .logo{
+
+footer .logo {
     height: 3.2rem;
 }
-footer ul{
+
+footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -319,38 +404,47 @@ footer ul{
 
 
 
-@media(max-width:575px){
-    html{
+@media(max-width:575px) {
+    html {
         font-size: 14px;
     }
+
     .price-container {
         justify-content: center;
-      }
-      .sale-end{
-          text-align: center;
-      }
-      footer .logo{
+    }
+
+    .sale-end {
+        text-align: center;
+    }
+
+    footer .logo {
         display: block;
-       margin: auto;
+        margin: auto;
     }
-    .app{
-        background-color: rgb(0, 0, 0, .5);;
+
+    .app {
+        background-color: rgb(0, 0, 0, .5);
+        ;
     }
-    .col-md-8 > div{
+
+    .col-md-8>div {
         height: 17rem;
     }
-    
+
+}
+
+@media(min-width:576px) and (max-width:768px) {
+    html {
+        font-size: 16px;
     }
-    
-    @media(min-width:576px) and (max-width:768px) {
-        html{
-            font-size: 16px;
-        }
-        footer .logo{
-            display: block;
-           margin: auto;
-        }
-        .app{
-            background-color: rgb(0, 0, 0, .5);;
-        }
+
+    footer .logo {
+        display: block;
+        margin: auto;
+    }
+
+    .app {
+        background-color: rgb(0, 0, 0, .5);
+        ;
+    }
 }

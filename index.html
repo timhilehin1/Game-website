@@ -10,8 +10,10 @@
     <script src="https://kit.fontawesome.com/e96215e590.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./slick.css"/>
     <link rel="stylesheet" type="text/css" href="./slick-theme.css"/>
+    <link rel="stylesheet" href="./sidebar.css">
     <link rel="stylesheet" href="./styles.css">
     <title>T&M | </title>
+    <link rel="icon" type="image/x-icon" href="./images/cover.png">
 </head>
 <body>
     <div class="loading"><img src="images/cover.png" alt="">
@@ -24,7 +26,29 @@
     <div class="container-fluid p-0">
         <nav class="d-flex justify-content-between">
 <div class="d-flex my-2">
-<i class="fa-solid fa-bars d-md-none align-self-center px-3"></i>
+       <!-- Bootstap sidebar -->
+  <i class="fa-solid fa-bars d-md-none align-self-center px-3"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i> 
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+   <img src="images/cover.png" class="sidebar-logo" alt="">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   <div>
+        <p>STORE</p>
+        <hr>
+        <p>FAQ</p>
+        <hr>
+        <p>HELP</p>
+        <hr>
+        <p>UNREAL ENGINE</p>
+        <hr>
+        <p>ACCOUNT</p>
+        <hr>
+      </div>
+
+  </div>
+</div>
 <a href="" class="pe-2 align-self-center"><img class="nav-logo" src="./images/cover.png" alt="company logo"></a> 
 <ul class="px-2 m-0 align-self-center d-none d-md-block">
     <li><a class="px-2 py-3 active-nav" href="">STORE</a> </li>
