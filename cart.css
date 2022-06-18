@@ -25,6 +25,9 @@ body {
     color: white;
     position: relative;
 }
+.offcanvas.offcanvas-start {
+    width: 60%;
+}
 
 .page {
     display: none;
@@ -47,11 +50,6 @@ body {
 .btn-close {
     color: white;
     background-color: white;
-}
-
-.offcanvas {
-    background-color: rgb(0, 0, 0, .8);
-    width: 200px;
 }
 
 .sidebar-logo {
@@ -159,7 +157,11 @@ p {
 
 nav .fa-solid {
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+nav .fa-bars {
+    color: white;
+    font-size: 1.5rem;
 }
 
 .sticky {
@@ -234,7 +236,7 @@ nav .fa-solid {
 
 .outer-container img {
     object-fit: contain;
-    height: 13rem;
+    height: 9rem;
 }
 
 .outer-container {
@@ -258,8 +260,13 @@ nav .fa-solid {
     background-color: rgb(32, 32, 32, 0);
     border: 1px solid white;
     border-radius: 50px;
-    width: 1.5rem;
+    width: 2rem;
+    padding: .15rem;
     color: white;
+}
+.quantity-btn:hover {
+    background-color: rgb(255, 255, 255, .2)
+
 }
 
 .counter {
@@ -326,12 +333,17 @@ nav .fa-solid {
     transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
 }
 
+.app a {
+    border: 1px white solid;
+    color: white;
+}
+
 .app a:active,
 .app a:hover {
     border: 1px white solid;
-    color: var(--lightGreen);
-    box-shadow: inset 17rem 0 0 0 white;
+    background-color: rgb(225, 225, 225, .5);
 }
+
 
 footer {
     background-color: rgb(20, 20, 20, .9);
@@ -350,9 +362,6 @@ footer .to-top i {
     font-size: 2rem;
 }
 
-footer a:hover {
-    color: var(--lightGreen);
-}
 
 footer li {
     margin: .4rem 0;
@@ -392,7 +401,7 @@ footer ul {
 
 @media(max-width:575px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
 
     }
 
@@ -404,6 +413,15 @@ footer ul {
     .app {
         background-color: rgb(0, 0, 0, .5);
         ;
+    }
+    .outer-container img {
+        width: 100%;
+    }
+    .product-name {
+        font-size: 1.1rem;
+    }
+    .product-price {
+        font-size: 1.2rem;
     }
 }
 

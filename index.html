@@ -12,10 +12,25 @@
     <link rel="stylesheet" type="text/css" href="./slick-theme.css"/>
     <link rel="stylesheet" href="./sidebar.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>T&M | </title>
+    <title>T&M | Online Store</title>
     <link rel="icon" type="image/x-icon" href="./images/cover.png">
 </head>
 <body>
+<div class="added">
+  <div class="added-content d-flex justify-content-center px-4 py-2">
+    <div class="align-items-center d-flex"><p>Product has been added to cart</p></div>
+  </div>
+
+</div>
+<div class="already-inCart">
+    <div class="already-inCart-content d-flex justify-content-center px-4 py-2">
+      <div class="align-items-center d-flex"><p>Product is already in cart</p></div>
+    </div>
+  
+  </div>
+
+
+
     <div class="loading"><img loading = "lazy" src="images/cover.png" alt="">
     <div class="loader mt-3">
     </div>
@@ -25,9 +40,10 @@
     <!---NAVIGATION BAR-->
     <div class="container-fluid p-0">
         <nav class="d-flex justify-content-between">
-<div class="d-flex my-2">
+<div class="d-flex my-2 gap-2">
        <!-- Bootstap sidebar -->
-  <i class="fa-solid fa-bars d-md-none align-self-center px-3"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i> 
+  <i class="fa-solid fa-bars d-md-none align-self-center mx-2"  type="button" data-bs-toggle="offcanvas" 
+  data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i> 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
    <img loading = "lazy" src="images/cover.png" class="sidebar-logo" alt="">
@@ -51,7 +67,7 @@
 </div>
 
 <!-- end of sidebar -->
-<a href="" class="pe-2 align-self-center"><img loading = "lazy" class="nav-logo" src="./images/cover.png" alt="company logo"></a> 
+<a href="#" class="pe-2 align-self-center"><img loading = "lazy" class="nav-logo" src="./images/cover.png" alt="company logo"></a> 
 <ul class="px-2 m-0 align-self-center d-none d-md-block">
     <li><a class="px-2 py-3 active-nav" href="">STORE</a> </li>
     <li><a class="px-2 py-3" href="">HELP</a> </li>
@@ -87,12 +103,12 @@
     </div>
     <div class="carousels show-item">
         <div class="carousel-items rounded">
-            <img loading = "lazy" class="rounded carousel-img"  src="./images/hitman.jpg" alt="">
-            <img loading = "lazy" class="small-product-image d-none"  src="./images/sm hitman.jpg" alt="">
+            <img loading = "lazy" class="rounded carousel-img"  src="./images/cyberpunk.jpg" alt="">
+            <img loading = "lazy" class="small-product-image d-none"  src="./images/sm cyberpunk.jpg" alt="">
             <div class="carousel-info px-md-4 pb-md-5 px-3 pb-3">
-                <p class="now">Now Available</p>   <p class="slashed-price d-none">$13</p>
-                <div class="d-flex align-items-center"><span class="percent-off px-2 py-1">10%</span><p class="price ms-1">$21.99</p></div>  
-                <p class="product-name mb-2">Hitman III</p>
+                <p class="now">Now Available</p>   <p class="slashed-price d-none">$10</p>
+                <div class="d-flex align-items-center"><span class="percent-off px-2 py-1">10%</span><p class="price ms-1">$23.99</p></div>  
+                <p class="product-name mb-2">Cyberpunk 2077</p>
                 <div class="d-flex align-items-center">
                     <a href="cart.html" class="rounded px-3 py-2 me-3 buy-now addCart"><i class="fa-solid fa-cart-shopping "></i> BUY NOW</a>
                     <a href="#" class="rounded px-3 py-2 add"><i class="fa-solid fa-circle-plus"></i>  Add to Wishlist</a>
@@ -135,12 +151,12 @@
 
     <div class="carousels">
         <div class="carousel-items rounded">
-            <img loading = "lazy" class="rounded carousel-img"  src="./images/spider-man.jpg" alt="">
-            <img loading = "lazy" class="small-product-image d-none"  src="./images/small spiderman.jpg" alt="">
+            <img loading = "lazy" class="rounded carousel-img"  src="./images/sifu.jpg" alt="">
+            <img loading = "lazy" class="small-product-image d-none"  src="./images/sm sifu.jpg" alt="">
             <div class="carousel-info px-md-4 pb-md-5 px-3 pb-3">
-                <p class="now">Now Available</p>   <p class="slashed-price d-none">$13</p>
-                <div class="d-flex align-items-center"><span class="percent-off px-2 py-1">20%</span><p class="price ms-1">$8.99</p></div>
-                    <p class="product-name mb-2">Spider-man: Miles Morales</p>
+                <p class="now">Now Available</p>   <p class="slashed-price d-none">$35</p>
+                <div class="d-flex align-items-center"><span class="percent-off px-2 py-1">20%</span><p class="price ms-1">$18.99</p></div>
+                    <p class="product-name mb-2">Sifu</p>
                 <div class="d-flex align-items-center">
                     <a href="cart.html" class="rounded px-3 py-2 me-3 buy-now addCart"><i class="fa-solid fa-cart-shopping "></i> BUY NOW</a>
                     <a href="#" class="rounded px-3 py-2 add"><i class="fa-solid fa-circle-plus"></i>  Add to Wishlist</a>
@@ -201,7 +217,7 @@
                     <p class="slashed-price pe-2 align-self-center">$50.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                  <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                  <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
               </div>
           </div>
           <!---HIDDEN DETAILS-->
@@ -224,7 +240,7 @@
                   <p class="slashed-price pe-2 align-self-center">$40.99</p>
                   <p class="price">$22.99</p>
               </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
         <!---HIDDEN DETAILS-->
@@ -247,7 +263,7 @@
                     <p class="slashed-price pe-2 align-self-center">$17.99</p>
                     <p class="price">$9.99</p>
                 </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
          <!---HIDDEN DETAILS-->
@@ -266,7 +282,7 @@
             <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                 <p class="slashed-price pe-2 align-self-center d-none"></p>
                 <p class="price">$19.99</p>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
          <!---HIDDEN DETAILS-->
@@ -288,7 +304,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
      <!---HIDDEN DETAILS-->
@@ -311,7 +327,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
      <!---HIDDEN DETAILS-->
@@ -335,7 +351,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
    <!---HIDDEN DETAILS-->
@@ -358,7 +374,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
      <!---HIDDEN DETAILS-->
@@ -445,7 +461,7 @@
                             <p class="slashed-price pe-2 align-self-center">$42.99</p>
                             <p class="price">$31.99</p>
                         </div>
-                          <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                          <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                       </div>
                   </div>
              <!---HIDDEN DETAILS-->
@@ -467,7 +483,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             <!---HIDDEN DETAILS-->
@@ -488,7 +504,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
            <!---HIDDEN DETAILS-->
@@ -507,7 +523,7 @@
                     <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                         <p class="slashed-price pe-2 align-self-center d-none"></p>
                         <p class="price">$20.99</p>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
                    <!---HIDDEN DETAILS-->
@@ -529,7 +545,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
            <!---HIDDEN DETAILS-->
@@ -551,7 +567,7 @@
                     <p class="slashed-price pe-2 align-self-center">$33.99</p>
                     <p class="price">$51.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
              <!---HIDDEN DETAILS-->
@@ -572,7 +588,7 @@
                     <p class="slashed-price pe-2 align-self-center">$12.99</p>
                     <p class="price">$21.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
             <!---HIDDEN DETAILS-->
@@ -593,7 +609,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
              <!---HIDDEN DETAILS-->
@@ -638,7 +654,7 @@
                 <p class="slashed-price pe-2 align-self-center">$42.99</p>
                 <p class="price">$31.99</p>
             </div>
-                    <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                    <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                 </div>
             </div>
          <!---HIDDEN DETAILS-->
@@ -659,7 +675,7 @@
                     <p class="slashed-price pe-2 align-self-center">$22</p>
                     <p class="price">$11.99</p>
                 </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
       <!---HIDDEN DETAILS-->
@@ -680,7 +696,7 @@
               <p class="slashed-price pe-2 align-self-center">$42.99</p>
               <p class="price">$31.99</p>
           </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
 <!---HIDDEN DETAILS-->
@@ -704,7 +720,7 @@
                   <p class="slashed-price pe-2 align-self-center">$40.99</p>
                   <p class="price">$22.99</p>
               </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
         <!---HIDDEN DETAILS-->
@@ -726,7 +742,7 @@
             <p class="slashed-price pe-2 align-self-center">$42.99</p>
             <p class="price">$31.99</p>
         </div>
-                <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
             </div>
         </div>
    <!---HIDDEN DETAILS-->
@@ -748,7 +764,7 @@
                 <p class="slashed-price pe-2 align-self-center">$42.99</p>
                 <p class="price">$31.99</p>
             </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
  <!---HIDDEN DETAILS-->
@@ -770,7 +786,7 @@
         <p class="slashed-price pe-2 align-self-center">$42.99</p>
         <p class="price">$31.99</p>
     </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
 <!---HIDDEN DETAILS-->
@@ -789,7 +805,7 @@
         <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
             <p class="slashed-price pe-2 align-self-center">$42.99</p>
             <p class="price">$31.99</p>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
        <!---HIDDEN DETAILS-->
@@ -818,7 +834,7 @@
                 <p class="slashed-price pe-2 align-self-center">$33.99</p>
                 <p class="price">$51.99</p>
             </div>
-                    <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                    <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                 </div>
             </div>
          <!---HIDDEN DETAILS-->
@@ -839,7 +855,7 @@
         <p class="slashed-price pe-2 align-self-center">$42.99</p>
         <p class="price">$31.99</p>
     </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
 <!---HIDDEN DETAILS-->
@@ -862,7 +878,7 @@
               <p class="slashed-price pe-2 align-self-center">$30.99</p>
               <p class="price">$18.99</p>
           </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
     <!---HIDDEN DETAILS-->
@@ -880,7 +896,7 @@
                   <div class="d-flex justify-content-between"><p class="product-name align-self-center">Far Cry 6</p> </div>
                   <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                       <p class="price">$31.99</p>
-                      <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                      <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                   </div>
               </div>
           </div>
@@ -898,7 +914,7 @@
                 <p class="slashed-price pe-2 align-self-center">$42.99</p>
                 <p class="price">$31.99</p>
             </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
  <!---HIDDEN DETAILS-->
@@ -919,7 +935,7 @@
                 <p class="slashed-price pe-2 align-self-center">$42.99</p>
                 <p class="price">$31.99</p>
             </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
  <!---HIDDEN DETAILS-->
@@ -942,7 +958,7 @@
                 <p class="slashed-price pe-2 align-self-center">$42.99</p>
                 <p class="price">$31.99</p>
             </div>
-                    <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                    <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                 </div>
             </div>
        <!---HIDDEN DETAILS-->
@@ -963,7 +979,7 @@
         <p class="slashed-price pe-2 align-self-center">$12.99</p>
         <p class="price">$21.99</p>
     </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
 <!---HIDDEN DETAILS-->
@@ -1097,11 +1113,11 @@
                             <p class="slashed-price pe-2 align-self-center">$5.99</p>
                             <p class="price">$11</p>
                         </div>
-                          <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                          <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                       </div>
                   </div>
               <!---HIDDEN DETAILS-->
-     <img loading = "lazy" class="large-product-image d-none" src="images/xbox-console.png" alt="">
+     <img loading = "lazy" class="large-product-image d-none" src="images/xbox-controller.png" alt="">
      <img loading = "lazy" class="product-logo d-none" src="images/xbox logo.png" alt="">
      <p class="desc d-none">Experience the modernized design of the Xbox Wireless Controller, featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay.</p>
 </div>
@@ -1118,7 +1134,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
               <!---HIDDEN DETAILS-->
@@ -1139,7 +1155,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
               <!---HIDDEN DETAILS-->
@@ -1160,7 +1176,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
               <!---HIDDEN DETAILS-->
@@ -1182,7 +1198,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
               <!---HIDDEN DETAILS-->
@@ -1203,7 +1219,7 @@
                     <div class="d-flex w-100 mt-2 align-items-center justify-content-between">
                         <p class="slashed-price pe-2 align-self-center d-none"></p>
                         <p class="price">$31.99</p>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
              <!---HIDDEN DETAILS-->
@@ -1227,7 +1243,7 @@
         <p class="slashed-price pe-2 align-self-center d-none"></p>
         <p class="price">$4.99</p>
     </div>
-            <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+            <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
         </div>
     </div>
   <!---HIDDEN DETAILS-->
@@ -1248,7 +1264,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
               <!---HIDDEN DETAILS-->
@@ -1270,7 +1286,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
              <!---HIDDEN DETAILS-->
@@ -1291,7 +1307,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
              <!---HIDDEN DETAILS-->
@@ -1312,7 +1328,7 @@
                     <p class="slashed-price pe-2 align-self-center">$42.99</p>
                     <p class="price">$31.99</p>
                 </div>
-                        <button class="addCart rounded"><i class="p-2 fa-solid fa-cart-shopping "></i></button>
+                        <button class="addCart rounded"><i class="px-3 py-2 fa-solid fa-cart-shopping "></i></button>
                     </div>
                 </div>
               <!---HIDDEN DETAILS-->
@@ -1453,6 +1469,7 @@ responsive:[
    breakpoint:900,
   settings:{
 arrows:false,
+slidesToScroll: 1
   }
   
   },

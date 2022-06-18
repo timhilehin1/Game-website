@@ -46,15 +46,15 @@ function createCart(){
         cartItems.forEach(item => {
         if(item.slashed ==""){
             cart.innerHTML +=`<div class="w-100 d-flex p-3 outer-container mb-3 justify-content-md-between w-100 rounded flex-row">
-        <div class="d-flex flex-md-row px-1 me-4 flex-column"><img src="${item.image}" class="rounded"/>
+        <div class="d-flex flex-md-row px-1 flex-column"><img src="${item.image}" class="rounded"/>
           <p class="product-name px-md-4">${item.product}</p></div>
-          <div class="d-flex flex-column gap-1 ps-3">
+          <div class="d-flex flex-column gap-1 px-2">
             <div class="d-flex discount w-50">
               <p class="product-price">$${item.price}</p>
             </div>
             <div class="counter d-flex ">
               <button class="quantity-btn">-</button>
-              <p class="checkout-quantity mx-2">${item.inCart}</p>
+              <p class="checkout-quantity mx-2 align-self-center">${item.inCart}</p>
               <button class="quantity-btn">+</button>
             </div>
               <a class="remove mt-2" href="#"> <i class=" fa-solid fa-trash-can pe-1"></i>Remove</a>
@@ -64,9 +64,9 @@ function createCart(){
         }
         else{
             cart.innerHTML +=`<div class="w-100 d-flex p-3 outer-container mb-3 justify-content-between w-100 rounded flex-row">
-            <div class="d-flex flex-md-row px-1 me-4 flex-column"><img src="${item.image}" class="rounded"/>
+            <div class="d-flex flex-md-row px-1 flex-column"><img src="${item.image}" class="rounded"/>
               <p class="product-name px-md-4">${item.product}</p></div>
-              <div class="d-flex flex-column gap-1 ps-3">
+              <div class="d-flex flex-column gap-1 px-2">
               <p class="product-price">$${item.price}</p>
                 <div class="d-flex discount">
                   <p class="slashed-price align-self-center">$${item.slashed}</p>
@@ -75,7 +75,7 @@ function createCart(){
                 <p class="sale-end">Sale ends on 30/6/2022 at 12pm</p>
                 <div class="counter d-flex ">
                   <button class="quantity-btn">-</button>
-                  <p class="checkout-quantity mx-2">${item.inCart}</p>
+                  <p class="checkout-quantity mx-2 align-self-center">${item.inCart}</p>
                   <button class="quantity-btn">+</button>
                 </div>
                   <a class="remove mt-2" href="#"> <i class=" fa-solid fa-trash-can pe-1"></i>Remove</a>

@@ -27,7 +27,7 @@ let cart = cartDetails.map(function(product){
         <div class="col-lg-8 col-md-8 col-sm-12">
         <div><img src = "${product.image}" class="img-fluid productInfoImg" alt="Responsive image"></div>
         <img src = "${product.smallImage}" class="d-none small-product-image">
-        <p class="description my-2">${product.desc}</p>
+        <p class="description my-2 px-3">${product.desc}</p>
         </div>
     
         <div class="col-sm-12 col-md-4 col-lg-4">
@@ -71,7 +71,7 @@ let cart = cartDetails.map(function(product){
         <div class="col-lg-8 col-md-8 col-sm-12">
         <div><img src = "${product.image}" class="img-fluid productInfoImg" alt="Responsive image"></div>
         <img src = ${product.smallImage} class="d-none small-product-image">
-         <p class="description my-2">${product.desc}</p>
+         <p class="description my-2 px-3">${product.desc}</p>
         </div>
     
         <div class="col-sm-12 col-md-4 col-lg-4">
@@ -106,6 +106,19 @@ productInfo.innerHTML = cart.join("")
 
 
 /*ADD TO CART*/
+// Get the modal
+let added = document.querySelector('.added');
+let alreadyInCart = document.querySelector('.already-inCart');
+
+// Get the <span> element that closes the modal
+let closeAdded = document.querySelector('.added-close');
+let closeAlready = document.querySelector('.already-inCart');
+
+function closeModal() {
+    
+    added.style.display = "none";
+    alreadyInCart.style.display = "none";
+}
 let addtoCartBtn = document.querySelectorAll(".addCart")
 let cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
 
@@ -139,14 +152,27 @@ function update(currentProduct){
     if (cartItems.length == 0 || cartItems == undefined){
         cartItems.push({product : productName,  price : productPrice, image: smImageSrc, 
             inCart : 1, slashed : slashedPrice, percent: percentOff });
+            added.style.display = "block";
+            setTimeout(() => {
+                closeModal();
+            }, 1500)
         }
         else {
             for (let j = 0; j < cartItems.length; j++){
             if (cartItems[j].product === productName){
+                alreadyInCart.style.display = "block";
+                setTimeout(() => {
+                    closeModal();
+                }, 1500)
                 return
             }
         }
-        cartItems.push({product : productName,  price : productPrice, image: smImageSrc, inCart : 1, slashed : slashedPrice, percent: percentOff});
+        cartItems.push({product : productName,  price : productPrice, image: smImageSrc, inCart : 1, 
+            slashed : slashedPrice, percent: percentOff});
+            added.style.display = "block";
+            setTimeout(() => {
+                closeModal();
+            }, 2000)
         }
 let cart = JSON.stringify(cartItems);
 sessionStorage.setItem('cartItems', cart);

@@ -8,36 +8,37 @@ function loadingScreen (){
 }
 loadingScreen();
 
+
 let carouselImg = document.getElementsByClassName('carousel-img')
 //check browser width and set appropriate Carousel image according to browser width
 window.onresize = ()=>{
     if(window.innerWidth < 576){
-        carouselImg[0].src = "./images/sm hitman.jpg" ;
+        carouselImg[0].src ="./images/sm cyberpunk.jpg" ;
         carouselImg[1].src = "./images/sm far cry 6.webp";
         carouselImg[2].src = "./images/sm evil dead.jpg";
-        carouselImg[3].src = "./images/sm spider-man.jpg";
+        carouselImg[3].src = "./images/sm sifu.jpg"
         carouselImg[4].src = "./images/sm God of war.jpg";}
 
     else{
-        carouselImg[0].src = "./images/hitman.jpg";
-        carouselImg[1].src = "./images/far cry 6.png";
+        carouselImg[0].src =  "./images/cyberpunk.jpg";
+        carouselImg[1].src = "./images/sifu.jpg";
         carouselImg[2].src = "./images/evil dead.jpg";
-        carouselImg[3].src = "./images/spider-man.jpg";
+        carouselImg[3].src = "./images/sifu.jpg"
         carouselImg[4].src ="./images/God of War.jpeg";
     }
 }
 window.onload = () =>{
     if(window.innerWidth < 576){
-        carouselImg[0].src = "./images/sm hitman.jpg";
+        carouselImg[0].src = "./images/sm cyberpunk.jpg";
         carouselImg[1].src = "./images/sm far cry 6.webp";
         carouselImg[2].src = "./images/sm evil dead.jpg";
-        carouselImg[3].src = "./images/sm spider-man.jpg";
+        carouselImg[3].src = "./images/sm sifu.jpg"
         carouselImg[4].src = "./images/sm God of war.jpg";}
 
-    else{carouselImg[0].src = "./images/hitman.jpg";
+    else{carouselImg[0].src = "./images/cyberpunk.jpg";
         carouselImg[1].src = "./images/far cry 6.png";
         carouselImg[2].src = "./images/evil dead.jpg";
-        carouselImg[3].src = "./images/spider-man.jpg";
+        carouselImg[3].src = "./images/sifu.jpg"
         carouselImg[4].src ="./images/God of War.jpeg"}
 }
 
@@ -153,7 +154,27 @@ function displayComing(){
     NewCategory_El.style.display = 'none'
 }
 
+
+
+
+
 /*ADD TO CART*/
+// Get the modal
+let added = document.querySelector('.added');
+let alreadyInCart = document.querySelector('.already-inCart');
+
+// Get the <span> element that closes the modal
+let closeAdded = document.querySelector('.added-close');
+let closeAlready = document.querySelector('.already-inCart');
+
+function closeModal() {
+    
+    added.style.display = "none";
+    alreadyInCart.style.display = "none";
+}
+
+
+
 let addtoCartBtn = document.querySelectorAll(".addCart")
 let counter = document.querySelector('.cart-counter')
 let cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
@@ -175,7 +196,6 @@ update(event.target);
 
 function update(currentProduct){
     let productCont = currentProduct.parentElement.parentElement.parentElement.parentElement
-    console.log(productCont);
     let productPrice = productCont.querySelector('.price').innerText
     productPrice = productPrice.replace('$', '')
     let slashedPrice = productCont.querySelector('.slashed-price').innerText
@@ -188,15 +208,27 @@ function update(currentProduct){
     if (cartItems.length == 0 || cartItems == undefined){
         cartItems.push({product : productName,  price : productPrice, image: smImageSrc, 
             inCart : 1, slashed : slashedPrice, percent: percentOff });
+            added.style.display = "block";
+            setTimeout(() => {
+                closeModal();
+            }, 1500)
         }
         else {
             for (let j = 0; j < cartItems.length; j++){
             if (cartItems[j].product === productName){
-               alert('already in cart')
+                alreadyInCart.style.display = "block";
+                setTimeout(() => {
+                    closeModal();
+                }, 1500)
                 return
             }
         }
-        cartItems.push({product : productName,  price : productPrice, image: smImageSrc, inCart : 1, slashed : slashedPrice, percent: percentOff});
+        cartItems.push({product : productName,  price : productPrice, image: smImageSrc
+            , inCart : 1, slashed : slashedPrice, percent: percentOff});
+            added.style.display = "block";
+            setTimeout(() => {
+                closeModal();
+            }, 2000)
         }
 let cart = JSON.stringify(cartItems);
 sessionStorage.setItem('cartItems', cart);

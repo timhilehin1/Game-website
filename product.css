@@ -25,6 +25,64 @@ body {
     color: white;
     position: relative;
 }
+.offcanvas.offcanvas-start {
+    width: 60%;
+}
+/* The Modal (background) */
+.added, .already-inCart {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1025; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all ease-in-out;
+    animation: Slidedown 300ms;
+}
+
+/* Modal Content */
+.added-content {
+    background-color: var(--lightGreen);
+    color: white;
+    margin: auto;
+    width: 90%;
+}
+.already-inCart-content{
+    background-color: firebrick;
+    color: white;
+    margin: auto;
+    width: 80%;
+}
+
+/* The Close Button */
+.added-close ,.already-inCart-close{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.added-close:hover,
+.added-close:focus, .already-inCart-close:hover,
+.already-inCart-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+@keyframes Slidedown {
+    0% {
+        transform: translateY(-1%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
 
 .page {
     display: none;
@@ -47,11 +105,6 @@ body {
 .btn-close {
     color: white;
     background-color: white;
-}
-
-.offcanvas {
-    background-color: rgb(0, 0, 0, .8);
-    width: 200px;
 }
 
 .sidebar-logo {
@@ -159,7 +212,11 @@ p {
 
 nav .fa-solid {
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+nav .fa-bars {
+    color: white;
+    font-size: 1.5rem;
 }
 
 .sticky {
@@ -302,8 +359,6 @@ h2 {
 
 .add {
     color: white;
-    box-shadow: inset 0 0 0 0 white;
-    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
     border: .1rem solid white;
     background-color: rgb(0, 0, 0, 0);
 }
@@ -314,8 +369,7 @@ h2 {
 }
 
 .add:hover {
-    color: var(--darkGreen);
-    box-shadow: inset 29rem 0 0 0 white;
+    background-color: rgb(225, 225, 225, .5);
 }
 
 /* FOOTER*/
@@ -331,15 +385,12 @@ h2 {
 .app a {
     border: 1px white solid;
     color: white;
-    box-shadow: inset 0 0 0 0 white;
-    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
 }
 
 .app a:active,
 .app a:hover {
     border: 1px white solid;
-    color: var(--lightGreen);
-    box-shadow: inset 17rem 0 0 0 white;
+    background-color: rgb(225, 225, 225, .5);
 }
 
 footer {
@@ -359,9 +410,6 @@ footer .to-top i {
     font-size: 2rem;
 }
 
-footer a:hover {
-    color: var(--lightGreen);
-}
 
 footer li {
     margin: .4rem 0;
@@ -406,7 +454,7 @@ footer ul {
 
 @media(max-width:575px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .price-container {

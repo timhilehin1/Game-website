@@ -8,8 +8,6 @@
 }
 
 
-
-
 :root {
     --darkGreen: #096e8d;
     --lightGreen: #5bd0a4;
@@ -34,7 +32,9 @@ body {
     background-position: top;
     color: white;
     position: relative;
-    width: var(--bs-offcanvas-width);
+}
+.offcanvas.offcanvas-start {
+    width: 60%;
 }
 
 a:hover {
@@ -62,11 +62,6 @@ a:hover {
 .btn-close {
     color: white;
     background-color: white;
-}
-
-.offcanvas {
-    background-color: rgb(0, 0, 0, .8);
-    width: 200px;
 }
 
 .sidebar-logo {
@@ -116,6 +111,62 @@ a:hover {
         -webkit-transform: rotate(360deg);
     }
 }
+/* The Modal (background) */
+.added, .already-inCart {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1025; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all ease-in-out;
+    animation: Slidedown 300ms;
+}
+
+/* Modal Content */
+.added-content {
+    background-color: var(--lightGreen);
+    color: white;
+    margin: auto;
+    width: 90%;
+}
+.already-inCart-content{
+    margin-top: 1rem;
+    background-color: firebrick;
+    color: white;
+    margin: auto;
+    width: 80%;
+}
+
+/* The Close Button */
+.added-close ,.already-inCart-close{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.added-close:hover,
+.added-close:focus, .already-inCart-close:hover,
+.already-inCart-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+@keyframes Slidedown {
+    0% {
+        transform: translateY(-1%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
 
 a {
     text-decoration: none;
@@ -170,7 +221,11 @@ p {
 
 nav .fa-solid {
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+nav .fa-bars {
+    color: white;
+    font-size: 1.5rem;
 }
 
 .sticky {
@@ -281,13 +336,11 @@ nav .fa-solid {
 
 .carousel-info .add {
     color: white;
-    box-shadow: inset 0 0 0 0 white;
-    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
 }
 
 .carousel-info .add:hover {
     color: #096e8d;
-    box-shadow: inset 17rem 0 0 0 white;
+    background-color: rgb(225, 225, 225);
 }
 
 .carousel-info .product-name {
@@ -708,19 +761,18 @@ h4 i {
     height: 1.8rem;
 }
 
+
 .app a {
     border: 1px white solid;
     color: white;
-    box-shadow: inset 0 0 0 0 white;
-    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
 }
 
 .app a:active,
 .app a:hover {
     border: 1px white solid;
-    color: var(--lightGreen);
-    box-shadow: inset 17rem 0 0 0 white;
+    background-color: rgb(225, 225, 225, .5);
 }
+
 
 .soonCategory .product-image {
     filter: brightness(60%);
@@ -743,10 +795,6 @@ footer i {
 
 footer .to-top i {
     font-size: 2rem;
-}
-
-footer a:hover {
-    color: var(--lightGreen);
 }
 
 footer li {
@@ -790,15 +838,15 @@ footer ul {
 
 @media(max-width:575px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .carousel {
-        height: 27rem;
+        height: 31rem;
     }
 
     .carousel-items {
-        height: 27rem;
+        height: 31rem;
     }
 
     .carousel-info .buy-now {
@@ -807,15 +855,15 @@ footer ul {
 
     .carousel-info .add {
         border: 1px solid var(--lightGreen);
-        font-size: .6rem;
+        font-size: 1rem;
     }
 
     .carousel-info .product-name {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .carousel .product-price {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .editor-picks {
@@ -853,7 +901,7 @@ footer ul {
 
 @media(min-width:576px) and (max-width:768px) {
     html {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .carousel {
