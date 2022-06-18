@@ -25,7 +25,15 @@ body {
     color: white;
     position: relative;
 }
+.btn-close {
+    color: white;
+    background-color: white;
+}
+.sidebar-logo {
+    height: 1.5rem;
+}
 .offcanvas.offcanvas-start {
+    background-color: rgb(0, 0, 0, .8);
     width: 60%;
 }
 
