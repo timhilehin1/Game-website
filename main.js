@@ -1,52 +1,51 @@
+let carouselImg = document.getElementsByClassName('carousel-img')
+//check browser width and set appropriate Carousel image according to browser width
+window.onload = () =>{
+    if(window.innerWidth > 576){
+        carouselImg[0].src =  "./images/cyberpunk.jpg";
+        carouselImg[1].src = "./images/far cry 6.png";
+        carouselImg[2].src = "./images/evil dead.jpg";
+        carouselImg[3].src = "./images/sifu.jpg"
+        carouselImg[4].src ="./images/God of War.jpeg"
+    }
+
+    else{
+        carouselImg[0].src ="./images/sm cyberpunk.jpg" ;
+        carouselImg[1].src = "./images/sm far cry 6.webp";
+        carouselImg[2].src = "./images/sm evil dead.jpg";
+        carouselImg[3].src = "./images/sm sifu.jpg"
+        carouselImg[4].src = "./images/sm God of war.jpg";;
+    }
+}
+window.onresize = ()=>{
+    if(window.innerWidth > 576){
+        carouselImg[0].src =  "./images/cyberpunk.jpg";
+        carouselImg[1].src = "./images/far cry 6.png";
+        carouselImg[2].src = "./images/evil dead.jpg";
+        carouselImg[3].src = "./images/sifu.jpg"
+        carouselImg[4].src ="./images/God of War.jpeg"
+
+    }
+
+    else{
+        carouselImg[0].src ="./images/sm cyberpunk.jpg" ;
+        carouselImg[1].src = "./images/sm far cry 6.webp";
+        carouselImg[2].src = "./images/sm evil dead.jpg";
+        carouselImg[3].src = "./images/sm sifu.jpg"
+        carouselImg[4].src = "./images/sm God of war.jpg";;
+    }
+}
+
+
 function loadingScreen (){
     let load = document.getElementsByClassName('loading')[0]
     let page = document.getElementsByClassName('page')[0]
     setTimeout(() => {
         page.style.display ="block"
         load.style.display ="none"
-    }, 5000)    
+    }, 6000)    
 }
 loadingScreen();
-
-
-let carouselImg = document.getElementsByClassName('carousel-img')
-//check browser width and set appropriate Carousel image according to browser width
-window.onresize = ()=>{
-    if(window.innerWidth > 576){
-        carouselImg[0].src =  "./images/cyberpunk.jpg";
-        carouselImg[1].src = "./images/sifu.jpg";
-        carouselImg[2].src = "./images/evil dead.jpg";
-        carouselImg[3].src = "./images/sifu.jpg"
-        carouselImg[4].src ="./images/God of War.jpeg"
-
-    }
-
-    else{
-        carouselImg[0].src ="./images/sm cyberpunk.jpg" ;
-        carouselImg[1].src = "./images/sm far cry 6.webp";
-        carouselImg[2].src = "./images/sm evil dead.jpg";
-        carouselImg[3].src = "./images/sm sifu.jpg"
-        carouselImg[4].src = "./images/sm God of war.jpg";;
-    }
-}
-window.onload = () =>{
-    if(window.innerWidth > 576){
-        carouselImg[0].src =  "./images/cyberpunk.jpg";
-        carouselImg[1].src = "./images/sifu.jpg";
-        carouselImg[2].src = "./images/evil dead.jpg";
-        carouselImg[3].src = "./images/sifu.jpg"
-        carouselImg[4].src ="./images/God of War.jpeg"
-
-    }
-
-    else{
-        carouselImg[0].src ="./images/sm cyberpunk.jpg" ;
-        carouselImg[1].src = "./images/sm far cry 6.webp";
-        carouselImg[2].src = "./images/sm evil dead.jpg";
-        carouselImg[3].src = "./images/sm sifu.jpg"
-        carouselImg[4].src = "./images/sm God of war.jpg";;
-    }
-}
 
 
 
