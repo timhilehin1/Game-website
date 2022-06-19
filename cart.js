@@ -40,7 +40,7 @@ cartSize.innerText =  JSON.parse(sessionStorage.getItem('cartItems')).length
 
 function createCart(){
     if (cartItems == undefined){
-       alert('nothing in cart');
+      return
     }
     else{
         cartItems.forEach(item => {
